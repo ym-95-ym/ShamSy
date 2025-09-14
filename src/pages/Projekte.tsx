@@ -24,7 +24,7 @@ const Projekte = () => {
       price: "80 € - einmalig",
       description: "JA! Tatsächlich sind die Gehälter in Syrien sehr niedrig, trotz neulicher Erhöhung seit Dezember 2024. Die Waren und Grundnahrungsmittel aber nicht. Sogar an mehreren Stellen wie in Deutschland! Mit einer -für Deutschland- nicht allzu hohen Summe können Sie die Möglichkeiten einer Familie in Not für einen Monat zu verdoppeln.",
       icon: Heart,
-      image: "/images/gehalt.jpg"
+      image: "/shamsy/images/gehalt.jpg"
     },
     {
       id: 2,
@@ -33,7 +33,7 @@ const Projekte = () => {
       price: "13 € mtl.",
       description: "Finanzierung von Lebensunterhalt und Bildungskosten eines Waisenindes in Syrien. Durch direkte Kommunikation mit unseren lokalen Partnern können wir für maximale Transparenz sorgen und sicherstellen, das das Geld an den richtigen Stellen kommt.",
       icon: Heart,
-      image: "/images/children.jpg"
+      image: "/shamsy/images/children.jpg"
     },
     {
       id: 3,
@@ -42,7 +42,7 @@ const Projekte = () => {
       price: "40 € - einmalig",
       description: "Kleidung, Rücksack, Hefte, Stifte uvm. für einen ordentlichen Schulanfang besorgen, dass Kinder in Syrien mit Hoffnung aufs Jahr blicken können.",
       icon: GraduationCap,
-      image: "/images/kindergruppe.jpg"
+      image: "/shamsy/images/kindergruppe.jpg"
     },
     {
       id: 4,
@@ -51,7 +51,7 @@ const Projekte = () => {
       price: "beliebig", 
       description: "Ermöglichen Sie eine medizinische Behandlung oder Operation für eine Person in Not! Es gibt zahlreiche Menschen in Damaskus und Umgebung ohne Geld für medizinische Behandlung. Eine Versicherung gibt es auch nicht. Sie können uns eine beliebige Summe spenden und wir stellen sicher, dass damit eine medizinise Behandlung/Operation bezahlt wird. Ihr Beitrag kann Leben retten.",
       icon: Heart,
-      image: "/images/operation.jpg"
+      image: "/shamsy/images/operation.jpg"
     },
     {
       id: 5,
@@ -60,7 +60,7 @@ const Projekte = () => {
       price: "1.000 € (Teilspenden möglich!)",
       description: "Anschaffung und Installation eines Trinkwasserbrunnens für einen kleinen Dorf, besonders wichtig für die extreme Hitze aufgrund vom Klimawandel und Mangel an Trinkmöglichkeiten in Syrien.",
       icon: Users,
-      image: "/images/water.jpg"
+      image: "/shamsy/images/water.jpg"
     },
     {
       id: 6,
@@ -69,7 +69,7 @@ const Projekte = () => {
       price: "beliebig - für Geräte ab 6.000 € (Teilspenden möglich!)",
       description: "Wir haben zahlreiche Angebote von Krankenhäusern und Partner NGOs über diverse medizinische Geräte, die bei der Rehabilitierung von zerstörten Krankenhäusern fehlen. Darunter Bildgebungsgeräte (CT, Röntgen, Röntgen-Thorax, EKG) für Kliniken die Milionen von Menschen versorgen (Douma, Ibn El-Nafis, Qattana, uvm.).",
       icon: Heart,
-      image: "/images/operation.jpg"
+      image: "/shamsy/images/operation.jpg"
     },
     {
       id: 7,
@@ -78,7 +78,7 @@ const Projekte = () => {
       price: "5.000 € (Teilspenden möglich!)",
       description: "Unterstützung und Weiterbildung des Bildungskaders, Sanierung und Reparatur der Schule sowie Sicherung ihrer Versorgung.",
       icon: GraduationCap,
-      image: "/images/schule-kind.jpg"
+      image: "/shamsy/images/schule-kind.jpg"
     }
   ];
 
