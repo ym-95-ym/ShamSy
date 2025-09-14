@@ -35,15 +35,12 @@ const Spenden = () => {
     {
       id: "general",
       name: "Wo am nötigsten",
-      description: "Unterstützen Sie uns dabei, die Mittel dort einzusetzen, wo sie am dringendsten gebraucht werden.",
-      progress: 57,
-      goal: 50000,
-      raised: 28500
+      description: "Unterstützen Sie uns dabei, die Mittel dort einzusetzen, wo sie am dringendsten gebraucht werden."
     },
     {
       id: "solar",
-      name: "Solarenergie Aleppo",
-      description: "500 Haushalte in Aleppo mit nachhaltiger Solarenergie versorgen.",
+      name: "Solarenergie",
+      description: "Unterstützen Sie ein Projekt für Solarenergie",
       progress: 75,
       goal: 50000,
       raised: 37500
@@ -74,9 +71,9 @@ const Spenden = () => {
   const getImpactText = (amount: number) => {
     if (amount >= 1000) return `${Math.floor(amount / 50)} Familien 1 Monat mit Solarstrom versorgen`;
     if (amount >= 500) return `${Math.floor(amount / 25)} Schulkinder 1 Jahr mit Schulmaterialien ausstatten`;
-    if (amount >= 100) return `${Math.floor(amount / 20)} medizinische Behandlungen ermöglichen`;
-    if (amount >= 50) return "2 Familien 1 Woche mit Notversorgung helfen";
-    if (amount >= 25) return "1 Familie 1 Woche mit Grundversorgung helfen";
+    if (amount >= 100) return `${Math.floor(amount / 20)} > 1 Monatsgehalt! Eine medizinische Behandlungen ermöglichen`;
+    if (amount >= 50) return "2 Familien 2 Woche mit Notversorgung helfen";
+    if (amount >= 25) return "1 Familie 2 Woche mit Grundversorgung helfen";
     return "Jeder Beitrag hilft beim Wiederaufbau";
   };
 
