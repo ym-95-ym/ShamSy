@@ -20,7 +20,7 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <BrowserRouter>
+      <BrowserRouter basename="/shamsy">  {/* ← DIESE ZEILE HINZUGEFÜGT */}
         <div className="min-h-screen flex flex-col">
           <Navigation />
           <main className="flex-grow">
@@ -31,7 +31,6 @@ const App = () => (
               <Route path="/vergangene-projekte" element={<VergangeneProj />} />
               <Route path="/mitmachen" element={<Mitmachen />} />
               <Route path="/spenden" element={<Spenden />} />
-              {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />
             </Routes>
           </main>
