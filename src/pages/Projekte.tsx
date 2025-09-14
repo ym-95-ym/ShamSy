@@ -91,7 +91,7 @@ const Projekte = () => {
       price: "400.000 €",
       description: "250 kW Solarsystem für eine ländliche Schule, landwirtschaftlichen Hub und Wohnhäuser. Über 10.000 Menschen, 500 Schüler und 50 landwirtschaftliche Betriebe erhalten stabile Elektrizität für Bildung und Produktion.",
       icon: Zap,
-      image: "/images/pv-sys.jpg",
+      image: "/shamsy/images/pv-sys.jpg",
       stats: [
         { number: "10.000", label: "Menschen mit Strom versorgen" },
         { number: "500+", label: "Schüler mit Strom versorgen" },
@@ -105,7 +105,7 @@ const Projekte = () => {
       price: "350.000 €",
       description: "Wiederherstellung Teil der Kapazitäten eines Krankenhauses, das über 1 Million Patienten jährlich versorgt. Das Krankenhaus, nach 12.2024 mit Dronenaufnahme dokumentiert, wurde vom alten Regime komplett bombardiert. Unser Partner NGO (Al-Sahha al-Khairiyah) in Douma hat nach der Zerstörung eine Multi-Fachklinik eingerichtet und will das weiterbauen und zu einem Krankenhaus rehabilitieren. Heute wollen wir mit dem Wiederaufbau unterstützen und planen Anschaffung medizinischer Geräten z.B., CT-Scanner und einem voll-integrierten Solarsystem.",
       icon: Heart,
-      image: "/images/douma-hospital-after.jpg",
+      image: "/shamsy/images/douma-hospital-after.jpg",
       stats: [
         { number: "1 Mio+", label: "Patienten/Jahr" },
         { number: "100%", label: "Notwendig" },
@@ -119,7 +119,7 @@ const Projekte = () => {
       price: "250.000 €",
       description: "Sanierung von Schulen zu sicheren, hochwertigen Standards. 3.000+ Schüler erhalten verbesserte Bildungsumgebungen mit modernen Klassenzimmern, sanitären Anlagen und barrierefreiem Zugang.",
       icon: GraduationCap,
-      image: "/images/schule.jpg",
+      image: "/shamsy/images/schule.jpg",
       stats: [
         { number: "3000+", label: "Schüler" },
         { number: "5", label: "Schulen" },
