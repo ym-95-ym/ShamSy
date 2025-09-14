@@ -24,7 +24,10 @@ const Projekte = () => {
       price: "80 € - einmalig",
       description: "JA! Tatsächlich sind die Gehälter in Syrien sehr niedrig, trotz neulicher Erhöhung seit Dezember 2024. Die Waren und Grundnahrungsmittel aber nicht. Sogar an mehreren Stellen wie in Deutschland! Mit einer -für Deutschland- nicht allzu hohen Summe können Sie die Möglichkeiten einer Familie in Not für einen Monat zu verdoppeln.",
       icon: Heart,
-      image: "/shamsy/images/gehalt.jpg"
+      image: "/shamsy/images/gehalt.jpg",
+      progress: 60,
+      goal: 25000,
+      raised: 15000
     },
     {
       id: 2,
