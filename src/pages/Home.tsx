@@ -11,7 +11,7 @@ const Home = () => {
         {/* Background Image */}
         <div className="absolute inset-0">
           <img 
-            src="/images/hero-destruction.jpg" 
+            src="/shamsy/images/hero-destruction.jpg" 
             alt="Zerstörung in Syrien - ShamSy Archive"
             className="w-full h-full object-cover"
           />
