@@ -88,7 +88,7 @@ const VergangeneProj = () => {
                   <p className="text-orange-700 leading-relaxed text-sm md:text-lg">
                     <strong>Alle folgenden Projekte wurden unter der Assad-Diktatur durchgeführt.</strong> 
                     Das bedeutete: Ständige Angst vor Verfolgung, Geheimhaltung zum Schutz unserer Familien in Syrien, 
-                    und enorme logistische Herausforderungen. Jedes Projekt war ein Risiko - aber auch ein Akt der Hoffnung.
+                    und enorme logistische Herausforderungen. Jedes Projekt war ein Risiko - aber auch ein Akt der Hoffnung. Es wäre unmöglich ohne Unterstützung unserer Partner NGOs und Kollegen in Syrien.
                   </p>
                 </div>
               </div>
