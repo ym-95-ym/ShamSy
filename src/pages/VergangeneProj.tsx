@@ -75,17 +75,17 @@ const VergangeneProj = () => {
       />
 
       {/* Warning Banner */}
-      <section className="py-12 bg-gradient-to-r from-orange-50 to-red-50">
+      <section className="py-8 md:py-12 shamsy-bg-gradient">
         <div className="container mx-auto px-4">
           <Card className="border-orange-200 bg-white/90 backdrop-blur-sm">
-            <CardContent className="p-8">
-              <div className="flex items-start gap-4">
-                <AlertTriangle className="w-8 h-8 text-orange-500 mt-1 flex-shrink-0" />
+            <CardContent className="p-4 md:p-8">
+              <div className="flex items-start gap-3 md:gap-4">
+                <AlertTriangle className="w-6 h-6 md:w-8 md:h-8 text-orange-500 mt-1 flex-shrink-0" />
                 <div>
-                  <h3 className="text-2xl font-semibold text-orange-800 mb-3">
+                  <h3 className="text-lg md:text-2xl font-semibold text-orange-800 mb-2 md:mb-3">
                     Hilfe unter extremen Bedingungen
                   </h3>
-                  <p className="text-orange-700 leading-relaxed text-lg">
+                  <p className="text-orange-700 leading-relaxed text-sm md:text-lg">
                     <strong>Alle folgenden Projekte wurden unter der Assad-Diktatur durchgeführt.</strong> 
                     Das bedeutete: Ständige Angst vor Verfolgung, Geheimhaltung zum Schutz unserer Familien in Syrien, 
                     und enorme logistische Herausforderungen. Jedes Projekt war ein Risiko - aber auch ein Akt der Hoffnung.
@@ -100,51 +100,51 @@ const VergangeneProj = () => {
       {/* Success Stats */}
       <section className="py-16 shamsy-bg-gradient">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-light text-foreground mb-6">
+          <div className="text-center mb-8 md:mb-12">
+            <h2 className="text-2xl md:text-4xl lg:text-5xl font-light text-foreground mb-4 md:mb-6">
               Erfolge trotz Widrigkeiten
             </h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+            <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto px-4">
               Was wir in 4 Jahren heimlicher Arbeit erreicht haben
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8">
             <Card className="shamsy-card border-shamsy-primary/20 text-center">
-              <CardContent className="p-8">
-                <Star className="w-12 h-12 text-shamsy-primary mx-auto mb-4" />
-                <div className="text-4xl font-bold text-shamsy-primary mb-2">
+              <CardContent className="p-4 md:p-8">
+                <Star className="w-8 h-8 md:w-12 md:h-12 text-shamsy-primary mx-auto mb-3 md:mb-4" />
+                <div className="text-2xl md:text-4xl font-bold text-shamsy-primary mb-1 md:mb-2">
                   {totalStats.projectCount}
                 </div>
-                <div className="text-muted-foreground">Projekte erfolgreich durchgeführt</div>
+                <div className="text-xs md:text-sm text-muted-foreground">Projekte erfolgreich durchgeführt</div>
               </CardContent>
             </Card>
             
             <Card className="shamsy-card border-shamsy-primary/20 text-center">
-              <CardContent className="p-8">
-                <Users className="w-12 h-12 text-shamsy-primary mx-auto mb-4" />
-                <div className="text-4xl font-bold text-shamsy-primary mb-2">
+              <CardContent className="p-4 md:p-8">
+                <Users className="w-8 h-8 md:w-12 md:h-12 text-shamsy-primary mx-auto mb-3 md:mb-4" />
+                <div className="text-2xl md:text-4xl font-bold text-shamsy-primary mb-1 md:mb-2">
                   {totalStats.totalBeneficiaries.toLocaleString()}
                 </div>
-                <div className="text-muted-foreground">Menschen geholfen</div>
+                <div className="text-xs md:text-sm text-muted-foreground">Menschen geholfen</div>
               </CardContent>
             </Card>
             
             <Card className="shamsy-card border-shamsy-primary/20 text-center">
-              <CardContent className="p-8">
-                <ShieldCheck className="w-12 h-12 text-shamsy-primary mx-auto mb-4" />
-                <div className="text-4xl font-bold text-shamsy-primary mb-2">
+              <CardContent className="p-4 md:p-8">
+                <ShieldCheck className="w-8 h-8 md:w-12 md:h-12 text-shamsy-primary mx-auto mb-3 md:mb-4" />
+                <div className="text-2xl md:text-4xl font-bold text-shamsy-primary mb-1 md:mb-2">
                   €{totalStats.totalCost.toLocaleString()}
                 </div>
-                <div className="text-muted-foreground">Spendengelder eingesetzt</div>
+                <div className="text-xs md:text-sm text-muted-foreground">Spendengelder eingesetzt</div>
               </CardContent>
             </Card>
             
             <Card className="shamsy-card border-shamsy-primary/20 text-center">
-              <CardContent className="p-8">
-                <AlertTriangle className="w-12 h-12 text-orange-500 mx-auto mb-4" />
-                <div className="text-4xl font-bold text-orange-500 mb-2">0</div>
-                <div className="text-muted-foreground">Sicherheitsvorfälle</div>
+              <CardContent className="p-4 md:p-8">
+                <AlertTriangle className="w-8 h-8 md:w-12 md:h-12 text-orange-500 mx-auto mb-3 md:mb-4" />
+                <div className="text-2xl md:text-4xl font-bold text-orange-500 mb-1 md:mb-2">0</div>
+                <div className="text-xs md:text-sm text-muted-foreground">Sicherheitsvorfälle</div>
                 <div className="text-xs text-orange-600 mt-1">Trotz hohem Risiko</div>
               </CardContent>
             </Card>
@@ -168,39 +168,39 @@ const VergangeneProj = () => {
                     <CardContent className="p-0">
                       <div className="grid grid-cols-1 lg:grid-cols-3">
                         {/* Project Image */}
-                        <div className="relative h-64 lg:h-auto">
+                        <div className="relative h-48 md:h-64 lg:h-auto">
                           <img 
                             src={project.image} 
                             alt={project.title}
                             className="w-full h-full object-cover"
                           />
-                          <div className="absolute top-4 left-4">
-                            <Badge className="bg-shamsy-primary text-white">
+                          <div className="absolute top-2 md:top-4 left-2 md:left-4">
+                            <Badge className="bg-shamsy-primary text-white text-xs">
                               {project.category}
                             </Badge>
                           </div>
-                          <div className="absolute top-4 right-4">
-                            <Badge variant="outline" className="bg-white/90 backdrop-blur-sm">
+                          <div className="absolute top-2 md:top-4 right-2 md:right-4">
+                            <Badge variant="outline" className="bg-white/90 backdrop-blur-sm text-xs">
                               {project.year}
                             </Badge>
                           </div>
                         </div>
 
                         {/* Project Content */}
-                        <div className="lg:col-span-2 p-8">
-                          <div className="flex items-start gap-4 mb-6">
-                            <div className="w-16 h-16 bg-shamsy-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
-                              <IconComponent className="w-8 h-8 text-shamsy-primary" />
+                        <div className="lg:col-span-2 p-4 md:p-8">
+                          <div className="flex items-start gap-3 md:gap-4 mb-4 md:mb-6">
+                            <div className="w-12 h-12 md:w-16 md:h-16 bg-shamsy-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
+                              <IconComponent className="w-6 h-6 md:w-8 md:h-8 text-shamsy-primary" />
                             </div>
                             <div className="flex-grow">
-                              <h3 className="text-2xl font-semibold text-foreground mb-2">
+                              <h3 className="text-lg md:text-2xl font-semibold text-foreground mb-2">
                                 {project.title}
                               </h3>
-                              <div className="flex items-center gap-4 text-sm text-muted-foreground mb-4">
+                              <div className="flex flex-col gap-1 md:flex-row md:items-center md:gap-4 text-xs md:text-sm text-muted-foreground mb-3 md:mb-4">
                                 <span>{project.location}</span>
-                                <span>•</span>
+                                <span className="hidden md:inline">•</span>
                                 <span>{project.beneficiaries} begünstigt</span>
-                                <span>•</span>
+                                <span className="hidden md:inline">•</span>
                                 <span>{project.cost} investiert</span>
                               </div>
                               <Badge 
@@ -215,12 +215,12 @@ const VergangeneProj = () => {
                             </div>
                           </div>
 
-                          <p className="text-muted-foreground mb-6 leading-relaxed text-lg">
+                          <p className="text-muted-foreground mb-4 md:mb-6 leading-relaxed text-sm md:text-lg">
                             {project.description}
                           </p>
 
                           {/* Challenge & Impact */}
-                          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                          <div className="grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-6">
                             <div className="bg-red-50 p-4 rounded-lg border border-red-100">
                               <h4 className="font-semibold text-red-800 mb-2 flex items-center gap-2">
                                 <AlertTriangle className="w-4 h-4" />
