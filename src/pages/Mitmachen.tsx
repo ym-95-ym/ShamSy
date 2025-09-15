@@ -209,17 +209,17 @@ const Mitmachen = () => {
 
                     <Button 
                       asChild 
-                      className="bg-shamsy-primary hover:bg-shamsy-dark shamsy-transition group-hover:shamsy-shadow-green"
+                      className="bg-shamsy-primary hover:bg-shamsy-dark shamsy-transition group-hover:shamsy-shadow-green w-full"
                     >
                       {option.ctaLink.startsWith('mailto:') ? (
-                        <a href={option.ctaLink} className="flex items-center gap-2">
-                          {option.cta}
-                          <ArrowRight className="w-4 h-4" />
+                        <a href={option.ctaLink} className="flex items-center justify-center gap-2 w-full">
+                          <span className="truncate">{option.cta}</span>
+                          <ArrowRight className="w-4 h-4 flex-shrink-0" />
                         </a>
                       ) : (
-                        <Link to={option.ctaLink} className="flex items-center gap-2">
-                          {option.cta}
-                          <ArrowRight className="w-4 h-4" />
+                        <Link to={option.ctaLink} className="flex items-center justify-center gap-2 w-full">
+                          <span className="truncate">{option.cta}</span>
+                          <ArrowRight className="w-4 h-4 flex-shrink-0" />
                         </Link>
                       )}
                     </Button>
