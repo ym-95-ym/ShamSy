@@ -15,49 +15,77 @@ const VergangeneProj = () => {
   const pastProjects = [
     {
       id: 1,
-      title: "15 Notunterkünfte gebaut",
-      category: "Unterkünfte",
-      location: "Nordsyrien",
-      year: "2020-2023",
-      description: "Trotz enormer Sicherheitsrisiken haben wir 15 Notunterkünfte für Binnenflüchtlinge errichtet. Jede Unterkunft bot 6-8 Personen Schutz vor Witterung und Gewalt.",
-      beneficiaries: "120 Familien",
-      cost: "€18,500",
-      challenges: "Materialtransport unter Kriegsbedingungen, Sicherheit der Bauteams, Geheimhaltung vor dem Regime",
-      impact: "Über 400 Menschen erhielten sicheren Wohnraum",
-      icon: Home,
-      status: "Erfolgreich abgeschlossen",
-      image: "/images/shelter-project.jpg"
-    },
-    {
-      id: 2,
-      title: "Medizinische Operationen finanziert",
-      category: "Gesundheit",
-      location: "Verschiedene Krankenhäuser",
-      year: "2021-2024",
-      description: "Finanzierung von über 50 lebensrettenden Operationen für Menschen, die sich diese nicht leisten konnten. Von Herzoperationen bis hin zu orthopädischen Eingriffen.",
-      beneficiaries: "52 Patienten",
-      cost: "€35,000",
-      challenges: "Identifikation bedürftiger Patienten, Koordination mit Ärzten unter Geheimhaltung, Geldtransfer in Kriegsgebiet",
-      impact: "52 Leben gerettet, Familien vor dem Ruin bewahrt",
-      icon: Heart,
-      status: "Erfolgreich abgeschlossen",
-      image: "/images/medical-operations.jpg"
-    },
-    {
-      id: 3,
       title: "Schulen renoviert und ausgestattet",
       category: "Bildung",
-      location: "Aleppo & Damaskus",
+      location: "Der El-Asafir, Rural Damaskus",
       year: "2022-2024",
-      description: "8 Schulen wurden renoviert und mit neuen Möbeln, Tafeln und Schulmaterialien ausgestattet. Bildung als Grundstein für die Zukunft Syriens.",
-      beneficiaries: "2,400 Schüler",
-      cost: "€28,000",
-      challenges: "Beschaffung von Materialien, Transport in unsichere Gebiete, Koordination mit Schulleitern",
+      description: "Die Wiedereröffnung einer kriegsbeschädigten Schule wurde durch die Mobilisierung von Freiwilligen, die Reparatur der Infrastruktur und die Wiederherstellung sicherer Lernräume ermöglicht. Gemeinsam gaben wir Kindern ihre Zukunft zurück – einen Ort, an dem Hoffnung und Bildung wieder gedeihen können.",
+      beneficiaries: "400 Schüler",
+      cost: "€20,000",
+      challenges: "Beschaffung von Materialien, Transport in unsichere Gebiete, Koordination mit lokalen Partnern unter Geheimhaltung",
       impact: "Bessere Lernbedingungen für eine ganze Generation",
       icon: GraduationCap,
       status: "Erfolgreich abgeschlossen",
-      image: "/images/school-renovation.jpg"
+      image: "/shamsy/images/kindergruppe.jpg"
+    },
+    {
+      id: 2,
+      title: "Medizinische Operationen ermöglicht",
+      category: "Gesundheit",
+      location: "Verschiedene Krankenhäuser",
+      year: "2011-2024",
+      description: "Lebensverändernde Operationen und medizinische Eingriffe für bedürftige Patienten und Kindedr wurden finanziert und koordiniert – einschließlich der Bereitstellung von spezialisierten Hörgeräten für Kriegsbetroffene. Gemeinsam schenkten wir Menschen ihre Gesundheit und Lebensqualität zurück, die durch den Krieg verloren gegangen waren.",
+      cost: "€30,000",
+      challenges: "Suche nach bedürftigen Patienten in Kriegszeiten, Koordination mit Ärzten und Krankenhäuser, Anschaffung medizinischer Geräte",
+      impact: "Menschenleben gerettet, Neue Möglichkeiten geschaffen",
+      icon: Heart,
+      status: "Erfolgreich abgeschlossen",
+      image: "/shamsy/images/operation.jpg"
+    },
+    {
+      id: 3,
+      title: "15 Notunterkünfte gebaut",
+      category: "Unterkünfte",
+      location: "Eastern Ghouta",
+      year: "2011-2024",
+      description: "15 widerstandsfähige Unterkünfte wurden für Familien errichtet, die durch den Krieg im ländlichen Damaskus ihr Zuhause verloren haben – von der Planung über den Bau bis hin zur vollständigen Ausstattung. Gemeinsam mit unseren lokalen Partner NGOs sorgte unser transparentes Auswahlverfahren dafür, dass die Hilfe die Familien erreichte, die sie am dringendsten benötigten.",
+      beneficiaries: "120 Familien",
+      cost: "€200,000",
+      challenges: "Materialtransport unter Kriegsbedingungen, Sicherheit der Bauteams, Geheimhaltung vor dem Regime",
+      impact: "Über 500 Menschen erhielten sicheren Wohnraum",
+      icon: Home,
+      status: "Erfolgreich abgeschlossen",
+      image: "/shamsy/images/hero-destruction.jpg"
+    },
+    {
+      id: 4,
+      title: "Essen und Kleidung für alle",
+      category: "Humanitär",
+      location: "Damascus und Umgebung",
+      year: "2011-2024",
+      description: "Winterhilfe, Kleidung und Nahrungsmittel erreichten vertriebene Familien, während Jugendliche und Frauen durch IT- und Sprachworkshops neue Perspektiven erhielten. Gemeinsam schafften wir nicht nur Überlebenshilfe, sondern auch Wege in eine selbstbestimmte Zukunft.",
+      beneficiaries: "Menschen die mit Nichts fliehen mussten, Kinder, Frauen",
+      cost: "Kleidung, Essen",
+      challenges: "Materialtransport unter Kriegsbedingungen und von Deutschland nach Syrien, Geheimhaltung vor dem Regime",
+      icon: Home,
+      status: "laufend",
+      image: "/shamsy/images/kindergruppe.jpg"
+    },
+    {
+      id: 4,
+      title: "Medikamente bereitgestellt",
+      category: "Humanitär",
+      location: "Damascus und Umgebung",
+      year: "2011-2024",
+      description: "Beschaffung und Lieferung von Medikamenten und kritischen Diagnostikgeräten zur Verbesserung der Notfall- und Spezialversorgung. Sichere Lieferung und Schulung des Krankenhauspersonals in Douma wurden gewährleistet – damit lebensrettende Hilfe dort ankommt, wo sie am dringendsten gebraucht wird.",
+      beneficiaries: "Menschen in Not und Kriegsbetroffene",
+      cost: "€10,000",
+      challenges: "Materialtransport unter Kriegsbedingungen und von Deutschland nach Syrien, Geheimhaltung vor dem Regime",
+      icon: Home,
+      status: "Erfolgreich abgeschlossen",
+      image: "/shamsy/images/help.jpg"
     }
+
   ];
 
   const totalStats = {
