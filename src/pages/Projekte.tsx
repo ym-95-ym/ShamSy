@@ -24,7 +24,7 @@ const Projekte = () => {
       price: "80 € - einmalig",
       description: "JA! Tatsächlich sind die Gehälter in Syrien sehr niedrig, trotz neulicher Erhöhung seit Dezember 2024. Die Waren und Grundnahrungsmittel aber nicht. Sogar an mehreren Stellen wie in Deutschland! Mit einer -für Deutschland- nicht allzu hohen Summe können Sie die Möglichkeiten einer Familie in Not für einen Monat zu verdoppeln.",
       icon: Heart,
-      image: "/shamsy/images/gehalt.jpg"
+      image: "/images/gehalt.jpg"
     },
     {
       id: 2,
@@ -33,7 +33,7 @@ const Projekte = () => {
       price: "13 € mtl.",
       description: "Finanzierung von Lebensunterhalt und Bildungskosten eines Waisenindes in Syrien. Durch direkte Kommunikation mit unseren lokalen Partnern können wir für maximale Transparenz sorgen und sicherstellen, das das Geld an den richtigen Stellen kommt.",
       icon: Heart,
-      image: "/shamsy/images/children.jpg"
+      image: "/images/children.jpg"
     },
     {
       id: 3,
@@ -42,7 +42,7 @@ const Projekte = () => {
       price: "40 € - einmalig",
       description: "Kleidung, Rücksack, Hefte, Stifte uvm. für einen ordentlichen Schulanfang besorgen, dass Kinder in Syrien mit Hoffnung aufs Jahr blicken können.",
       icon: GraduationCap,
-      image: "/shamsy/images/kindergruppe.jpg"
+      image: "/images/kindergruppe.jpg"
     },
     {
       id: 4,
@@ -51,7 +51,7 @@ const Projekte = () => {
       price: "beliebig", 
       description: "Ermöglichen Sie eine medizinische Behandlung oder Operation für eine Person in Not! Es gibt zahlreiche Menschen in Damaskus und Umgebung ohne Geld für medizinische Behandlung. Eine Versicherung gibt es auch nicht. Sie können uns eine beliebige Summe spenden und wir stellen sicher, dass damit eine medizinise Behandlung/Operation bezahlt wird. Ihr Beitrag kann Leben retten.",
       icon: Heart,
-      image: "/shamsy/images/operation.jpg"
+      image: "/images/operation.jpg"
     },
     {
       id: 5,
@@ -60,7 +60,7 @@ const Projekte = () => {
       price: "1.000 € (Teilspenden möglich!)",
       description: "Anschaffung und Installation eines Trinkwasserbrunnens für einen kleinen Dorf, besonders wichtig für die extreme Hitze aufgrund vom Klimawandel und Mangel an Trinkmöglichkeiten in Syrien.",
       icon: Users,
-      image: "/shamsy/images/water.jpg"
+      image: "/images/water.jpg"
     },
     {
       id: 6,
@@ -69,7 +69,7 @@ const Projekte = () => {
       price: "beliebig - für Geräte ab 6.000 € (Teilspenden möglich!)",
       description: "Wir haben zahlreiche Angebote von Krankenhäusern und Partner NGOs über diverse medizinische Geräte, die bei der Rehabilitierung von zerstörten Krankenhäusern fehlen. Darunter Bildgebungsgeräte (CT, Röntgen, Röntgen-Thorax, EKG) für Kliniken die Milionen von Menschen versorgen (Douma, Ibn El-Nafis, Qattana, uvm.).",
       icon: Heart,
-      image: "/shamsy/images/operation.jpg"
+      image: "/images/operation.jpg"
     },
     {
       id: 7,
@@ -78,7 +78,7 @@ const Projekte = () => {
       price: "5.000 € (Teilspenden möglich!)",
       description: "Unterstützung und Weiterbildung des Bildungskaders, Sanierung und Reparatur der Schule sowie Sicherung ihrer Versorgung.",
       icon: GraduationCap,
-      image: "/shamsy/images/schule-kind.jpg"
+      image: "/images/schule-kind.jpg"
     }
   ];
 
@@ -91,7 +91,7 @@ const Projekte = () => {
       price: "400.000 €",
       description: "250 kW Solarsystem für eine ländliche Schule, landwirtschaftlichen Hub und Wohnhäuser. Über 10.000 Menschen, 500 Schüler und 50 landwirtschaftliche Betriebe erhalten stabile Elektrizität für Bildung und Produktion.",
       icon: Zap,
-      image: "/shamsy/images/pv-sys.jpg",
+      image: "/images/pv-sys.jpg",
       stats: [
         { number: "10.000", label: "Menschen mit Strom versorgen" },
         { number: "500+", label: "Schüler mit Strom versorgen" },
@@ -105,7 +105,7 @@ const Projekte = () => {
       price: "350.000 €",
       description: "Wiederherstellung Teil der Kapazitäten eines Krankenhauses, das über 1 Million Patienten jährlich versorgt. Das Krankenhaus, nach 12.2024 mit Dronenaufnahme dokumentiert, wurde vom alten Regime komplett bombardiert. Unser Partner NGO (Al-Sahha al-Khairiyah) in Douma hat nach der Zerstörung eine Multi-Fachklinik eingerichtet und will das weiterbauen und zu einem Krankenhaus rehabilitieren. Heute wollen wir mit dem Wiederaufbau unterstützen und planen Anschaffung medizinischer Geräten z.B., CT-Scanner und einem voll-integrierten Solarsystem.",
       icon: Heart,
-      image: "/shamsy/images/douma-hospital-after.jpg",
+      image: "/images/douma-hospital-after.jpg",
       stats: [
         { number: "1 Mio+", label: "Patienten/Jahr" },
         { number: "100%", label: "Notwendig" },
@@ -119,7 +119,7 @@ const Projekte = () => {
       price: "250.000 €",
       description: "Sanierung von Schulen zu sicheren, hochwertigen Standards. 3.000+ Schüler erhalten verbesserte Bildungsumgebungen mit modernen Klassenzimmern, sanitären Anlagen und barrierefreiem Zugang.",
       icon: GraduationCap,
-      image: "/shamsy/images/schule.jpg",
+      image: "/images/schule.jpg",
       stats: [
         { number: "3000+", label: "Schüler" },
         { number: "5", label: "Schulen" },
@@ -136,31 +136,31 @@ const Projekte = () => {
       />
 
       {/* Overview Stats */}
-      <section className="py-16 shamsy-bg-gradient">
+      <section className="py-12 md:py-16 shamsy-bg-gradient">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 mb-12">
             <Card className="shamsy-card border-shamsy-primary/20 text-center">
-              <CardContent className="p-6">
-                <div className="text-3xl font-bold text-shamsy-primary mb-2">{humanitarianProjects.length + majorProjects.length}</div>
-                <div className="text-sm text-muted-foreground">Aktuelle Projekte</div>
+              <CardContent className="p-4 md:p-6">
+                <div className="text-2xl md:text-3xl font-bold text-shamsy-primary mb-2">{humanitarianProjects.length + majorProjects.length}</div>
+                <div className="text-xs md:text-sm text-muted-foreground">Aktuelle Projekte</div>
               </CardContent>
             </Card>
             <Card className="shamsy-card border-shamsy-primary/20 text-center">
-              <CardContent className="p-6">
-                <div className="text-3xl font-bold text-shamsy-primary mb-2">€1M+</div>
-                <div className="text-sm text-muted-foreground">Gesamtziel Großprojekte</div>
+              <CardContent className="p-4 md:p-6">
+                <div className="text-2xl md:text-3xl font-bold text-shamsy-primary mb-2">€1M+</div>
+                <div className="text-xs md:text-sm text-muted-foreground">Gesamtziel Großprojekte</div>
               </CardContent>
             </Card>
             <Card className="shamsy-card border-shamsy-primary/20 text-center">
-              <CardContent className="p-6">
-                <div className="text-3xl font-bold text-shamsy-primary mb-2">Ab €13</div>
-                <div className="text-sm text-muted-foreground">Monatlich helfen</div>
+              <CardContent className="p-4 md:p-6">
+                <div className="text-2xl md:text-3xl font-bold text-shamsy-primary mb-2">Ab €13</div>
+                <div className="text-xs md:text-sm text-muted-foreground">Monatlich helfen</div>
               </CardContent>
             </Card>
             <Card className="shamsy-card border-shamsy-primary/20 text-center">
-              <CardContent className="p-6">
-                <div className="text-3xl font-bold text-shamsy-primary mb-2">13.500+</div>
-                <div className="text-sm text-muted-foreground">Geschätzte Begünstigte</div>
+              <CardContent className="p-4 md:p-6">
+                <div className="text-2xl md:text-3xl font-bold text-shamsy-primary mb-2">13.500+</div>
+                <div className="text-xs md:text-sm text-muted-foreground">Geschätzte Begünstigte</div>
               </CardContent>
             </Card>
           </div>
@@ -179,7 +179,7 @@ const Projekte = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
             {humanitarianProjects.map((project) => {
               const IconComponent = project.icon;
               return (
@@ -200,7 +200,7 @@ const Projekte = () => {
                       <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" />
                     </div>
 
-                    <div className="p-6">
+                    <div className="p-4 md:p-6">
                       <div className="flex items-start gap-3 mb-4">
                         <div className="w-12 h-12 bg-shamsy-primary/10 rounded-full flex items-center justify-center flex-shrink-0 group-hover:bg-shamsy-primary/20 shamsy-transition">
                           <IconComponent className="w-6 h-6 text-shamsy-primary" />
@@ -216,7 +216,7 @@ const Projekte = () => {
                         {project.price}
                       </div>
 
-                      <p className="text-muted-foreground text-sm leading-relaxed mb-6 line-clamp-4">
+                      <p className="text-muted-foreground text-sm leading-relaxed mb-4 md:mb-6 line-clamp-3 md:line-clamp-4">
                         {project.description}
                       </p>
 
@@ -274,7 +274,7 @@ const Projekte = () => {
                       </div>
 
                       {/* Project Details */}
-                      <div className="p-8 lg:p-10 flex flex-col justify-between">
+                      <div className="p-6 md:p-8 lg:p-10 flex flex-col justify-between">
                         <div>
                           <div className="flex items-start gap-4 mb-6">
                             <div className="w-16 h-16 bg-shamsy-primary/10 rounded-2xl flex items-center justify-center flex-shrink-0 group-hover:bg-shamsy-primary/20 shamsy-transition">
@@ -296,13 +296,13 @@ const Projekte = () => {
 
                           {/* Project Stats */}
                           {project.stats && (
-                            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
+                            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6 md:mb-8">
                               {project.stats.map((stat, index) => (
-                                <div key={index} className="shamsy-card border-shamsy-primary/20 text-center p-6 hover:bg-shamsy-primary/5 shamsy-transition">
-                                  <div className="text-3xl font-bold text-shamsy-primary mb-2">
+                                <div key={index} className="shamsy-card border-shamsy-primary/20 text-center p-4 md:p-6 hover:bg-shamsy-primary/5 shamsy-transition">
+                                  <div className="text-2xl md:text-3xl font-bold text-shamsy-primary mb-2">
                                     {stat.number}
                                   </div>
-                                  <div className="text-sm text-muted-foreground leading-tight">
+                                  <div className="text-xs md:text-sm text-muted-foreground leading-tight">
                                     {stat.label}
                                   </div>
                                 </div>
@@ -348,7 +348,7 @@ const Projekte = () => {
       <section className="py-20 shamsy-bg-gradient">
         <div className="container mx-auto px-4 text-center">
           <Card className="shamsy-card border-shamsy-primary/20 max-w-4xl mx-auto">
-            <CardContent className="p-12">
+            <CardContent className="p-6 md:p-12">
               <h2 className="text-3xl md:text-4xl font-light text-foreground mb-6">
                 Werden Sie Teil unserer Mission
               </h2>
