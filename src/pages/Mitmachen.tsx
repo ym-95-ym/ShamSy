@@ -301,5 +301,5 @@ const Mitmachen = () => {
     </div>
   );
 };
-
+ 
 export default Mitmachen;
