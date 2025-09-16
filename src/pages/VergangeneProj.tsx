@@ -90,9 +90,9 @@ const VergangeneProj = () => {
 
   const totalStats = {
     totalBeneficiaries: 2972,
-    totalCost: 81500,
-    projectCount: 23,
-    timespan: "2020-2024"
+    totalCost: 300000,
+    projectCount: 7,
+    timespan: "2011-2024"
   };
 
   return (
@@ -115,8 +115,7 @@ const VergangeneProj = () => {
                   </h3>
                   <p className="text-orange-700 leading-relaxed text-sm md:text-lg">
                     <strong>Alle folgenden Projekte wurden unter der Assad-Diktatur durchgeführt.</strong> 
-                    Das bedeutete: Ständige Angst vor Verfolgung, Geheimhaltung zum Schutz unserer Familien in Syrien, 
-                    und enorme logistische Herausforderungen. Jedes Projekt war ein Risiko - aber auch ein Akt der Hoffnung. Es wäre unmöglich ohne Unterstützung unserer Partner NGOs und Kollegen in Syrien.
+                    Das bedeutete: Ständige Angst vor Verfolgung, Geheimhaltung zum Schutz unserer Familien in Syrien,und enorme logistische Herausforderungen. Jedes Projekt war ein Risiko - aber auch ein Akt der Hoffnung. Alles wäre unmöglich ohne Unterstützung unserer Partner NGOs und Kollegen in Syrien.
                   </p>
                 </div>
               </div>
@@ -130,10 +129,10 @@ const VergangeneProj = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-8 md:mb-12">
             <h2 className="text-2xl md:text-4xl lg:text-5xl font-light text-foreground mb-4 md:mb-6">
-              Erfolge trotz Widrigkeiten
+              Erfolge trotz allen Hürden
             </h2>
             <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto px-4">
-              Was wir in 4 Jahren heimlicher Arbeit erreicht haben
+              Was wir seit Jahren heimlicher Arbeit erreicht haben.
             </p>
           </div>
 
@@ -150,30 +149,11 @@ const VergangeneProj = () => {
             
             <Card className="shamsy-card border-shamsy-primary/20 text-center">
               <CardContent className="p-4 md:p-8">
-                <Users className="w-8 h-8 md:w-12 md:h-12 text-shamsy-primary mx-auto mb-3 md:mb-4" />
-                <div className="text-2xl md:text-4xl font-bold text-shamsy-primary mb-1 md:mb-2">
-                  {totalStats.totalBeneficiaries.toLocaleString()}
-                </div>
-                <div className="text-xs md:text-sm text-muted-foreground">Menschen geholfen</div>
-              </CardContent>
-            </Card>
-            
-            <Card className="shamsy-card border-shamsy-primary/20 text-center">
-              <CardContent className="p-4 md:p-8">
                 <ShieldCheck className="w-8 h-8 md:w-12 md:h-12 text-shamsy-primary mx-auto mb-3 md:mb-4" />
                 <div className="text-2xl md:text-4xl font-bold text-shamsy-primary mb-1 md:mb-2">
                   €{totalStats.totalCost.toLocaleString()}
                 </div>
                 <div className="text-xs md:text-sm text-muted-foreground">Spendengelder eingesetzt</div>
-              </CardContent>
-            </Card>
-            
-            <Card className="shamsy-card border-shamsy-primary/20 text-center">
-              <CardContent className="p-4 md:p-8">
-                <AlertTriangle className="w-8 h-8 md:w-12 md:h-12 text-orange-500 mx-auto mb-3 md:mb-4" />
-                <div className="text-2xl md:text-4xl font-bold text-orange-500 mb-1 md:mb-2">0</div>
-                <div className="text-xs md:text-sm text-muted-foreground">Sicherheitsvorfälle</div>
-                <div className="text-xs text-orange-600 mt-1">Trotz hohem Risiko</div>
               </CardContent>
             </Card>
           </div>
@@ -290,8 +270,7 @@ const VergangeneProj = () => {
               </div>
               
               <blockquote className="text-2xl md:text-3xl font-light italic text-foreground mb-8 leading-relaxed">
-                "Jedes dieser Projekte war ein Risiko für uns und unsere Familien. Aber wenn wir die Dankbarkeit in den Augen der Menschen sahen, 
-                wussten wir: Es war richtig. Heute können wir endlich offen helfen - und das werden wir."
+                "Jedes dieser Projekte kam aus der Not. Unser Diktator hat ganze Städte zerstört, viele umgebracht oder verhaftet, und alle rote Linien überschritten. Hilfe war dort verboten, wo bombardiert wurde. Familien von Verhafteten mussten auf die Straße. Verletzte aus Kriegsgebieten durften nur heimlich versorgt werden. Es war grausam... Aber die Diktatur ist vorbei!"
               </blockquote>
               
               <cite className="text-lg font-semibold text-shamsy-primary">
@@ -300,7 +279,7 @@ const VergangeneProj = () => {
 
               <div className="mt-8 p-6 bg-shamsy-primary/5 rounded-lg border border-shamsy-primary/20">
                 <p className="text-foreground font-medium">
-                  <strong>Heute, in einem freien Syrien, können wir endlich das volle Potenzial unserer Arbeit entfalten.</strong>
+                  <strong>Seit 2024 können systematisch planen und agieren. Jetzt dürfen wir offiziell dort helfen, wo es verboten war.</strong>
                 </p>
               </div>
             </CardContent>
