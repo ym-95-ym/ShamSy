@@ -25,9 +25,7 @@ const Geschichte = () => {
                       Eine Geschichte der Hoffnung
                     </h3>
                     <p className="text-muted-foreground leading-relaxed text-lg">
-                      ShamSy entstand aus dem tiefen Wunsch, trotz aller Widrigkeiten niemals aufzuhören, 
-                      den Menschen in Syrien zu helfen. Unsere Geschichte beginnt mit der Flucht, 
-                      aber sie endet mit einer Mission der Hoffnung und des Wiederaufbaus.
+                      ShamSy entstand aus dem tiefen Wunsch, trotz aller Widrigkeiten niemals aufzuhören, den Menschen in Syrien zu helfen. Unsere Geschichte beginnt mit der Flucht, aber sie endet mit einer Mission der Hoffnung und des Wiederaufbaus.
                     </p>
                   </div>
                 </div>
@@ -37,7 +35,7 @@ const Geschichte = () => {
             {/* Timeline Items */}
             <div className="space-y-12">
               
-              {/* 2011 - Der Anfang */}
+              {/* 2011-2015 - Der Anfang */}
               <div className="flex gap-8 items-start">
                 <div className="flex-shrink-0 w-24 h-24 bg-shamsy-primary/10 rounded-full flex items-center justify-center">
                   <Calendar className="w-8 h-8 text-shamsy-primary" />
@@ -46,25 +44,23 @@ const Geschichte = () => {
                   <CardContent className="p-8">
                     <div className="flex items-center gap-3 mb-4">
                       <span className="bg-shamsy-primary text-white px-3 py-1 rounded-full text-sm font-semibold">
-                        2011
+                        2011-2015
                       </span>
                       <h3 className="text-2xl font-semibold text-foreground">
                         Der Beginn: Flucht aus Syrien
                       </h3>
                     </div>
                     <p className="text-muted-foreground leading-relaxed mb-4">
-                      Als der syrische Konflikt eskalierte, waren wir gezwungen, unser Heimatland zu verlassen. 
-                      Doch bereits während der Flucht begann unsere Mission: Wir halfen anderen Flüchtlingen 
-                      und organisierten erste Hilfsaktionen.
+                      Wir gingen auf die Straße für Freiheit und Gerechtigkeit. Die Antwort war: Verfolgung, Folter und Bomben. Rund sieben Millionen, ein Viertel der Bevölkerung, mussten in die Sicherheit fliehen - manche sowie wir nach Deutschland. Aber unser Herz blieb in Syrien und mit denen, die nicht fliehen konnten.
                     </p>
                     <p className="text-foreground font-medium">
-                      "Schon damals wussten wir: Wir werden zurückkehren - wenn nicht körperlich, dann mit unserer Hilfe."
+                      "Schon damals wussten wir: Wir müssen die helfen, die nicht fliehen konnten. Sie haben sonst Nichts."
                     </p>
                   </CardContent>
                 </Card>
               </div>
 
-              {/* 2012-2020 - Aufbau in Deutschland */}
+              {/* 2015-2019 - Aufbau in Deutschland */}
               <div className="flex gap-8 items-start">
                 <div className="flex-shrink-0 w-24 h-24 bg-shamsy-primary/10 rounded-full flex items-center justify-center">
                   <Users className="w-8 h-8 text-shamsy-primary" />
@@ -73,7 +69,7 @@ const Geschichte = () => {
                   <CardContent className="p-8">
                     <div className="flex items-center gap-3 mb-4">
                       <span className="bg-shamsy-primary text-white px-3 py-1 rounded-full text-sm font-semibold">
-                        2012-2020
+                        2015-2019
                       </span>
                       <h3 className="text-2xl font-semibold text-foreground">
                         Integration und Netzwerkaufbau
@@ -81,20 +77,18 @@ const Geschichte = () => {
                     </div>
                     <p className="text-muted-foreground leading-relaxed mb-4">
                       Während wir uns in Deutschland integrierten und neue Heimat fanden, 
-                      bauten wir kontinuierlich Netzwerke auf. Wir lernten das deutsche System kennen, 
-                      studierten, arbeiteten - und behielten dabei immer Syrien im Herzen.
+                      bauten wir kontinuierlich Netzwerke auf. Wir lernten das Leben in Deutschland kennen, studierten, arbeiteten - und behielten dabei immer Syrien im Herzen.
                     </p>
                     <div className="bg-shamsy-primary/5 p-4 rounded-lg">
                       <p className="text-foreground font-medium">
-                        Parallel organisierten wir im Geheimen erste Hilfsaktionen für Syrien, 
-                        trotz der Gefahr durch das Assad-Regime.
+                        Parallel organisierten wir im Geheimen erste Hilfsaktionen in Syrien, trotz der Gefahr durch das Assad-Regime.
                       </p>
                     </div>
                   </CardContent>
                 </Card>
               </div>
 
-              {/* 2020-2024 - Heimliche Hilfe */}
+              {/* 2011-2024 - Heimliche Hilfe */}
               <div className="flex gap-8 items-start">
                 <div className="flex-shrink-0 w-24 h-24 bg-shamsy-primary/10 rounded-full flex items-center justify-center">
                   <Target className="w-8 h-8 text-shamsy-primary" />
@@ -103,16 +97,14 @@ const Geschichte = () => {
                   <CardContent className="p-8">
                     <div className="flex items-center gap-3 mb-4">
                       <span className="bg-shamsy-primary text-white px-3 py-1 rounded-full text-sm font-semibold">
-                        2020-2024
+                        2011-2024
                       </span>
                       <h3 className="text-2xl font-semibold text-foreground">
                         Heimliche Hilfe trotz Gefahr
                       </h3>
                     </div>
                     <p className="text-muted-foreground leading-relaxed mb-4">
-                      Trotz der anhaltenden Diktatur und der Gefahr für unsere Familien in Syrien 
-                      organisierten wir kontinuierlich Hilfsprojekte. Unter größter Geheimhaltung 
-                      realisierten wir bedeutende Projekte.
+                      Trotz der Gefahr für uns und unsere Familien haben wir nie aufgehört zu helfen. Durch Unterstützung unserer zahlreichen lokalen Partner und NGOs konnten wir dort unterstützen, wo keine Hilfe reingelassen wurde. Viele Projekte und humanitäre Hilfsaktionen wurden geplant und realisiert. Am prägantesten sind: Unterstützung Familien in Not, Aufbau 15 Unterkünfte für vertriebene Familien, lebensrettende Operationen für Kriegsopfer, Schulrenovierungen in zerbombten Vierteln, Planung Solar-Systeme für Dörfer und Industrie - alles heimlich, alles gegen den Willen des Regimes, alles aus Liebe und für Gerechtigkeit zu einem unterdrückten Volk.
                     </p>
                     
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
@@ -142,16 +134,14 @@ const Geschichte = () => {
                   <CardContent className="p-8">
                     <div className="flex items-center gap-3 mb-4">
                       <span className="bg-gradient-to-r from-shamsy-primary to-shamsy-light text-white px-4 py-2 rounded-full text-sm font-semibold">
-                        2025 - HEUTE
+                        2025-Heute
                       </span>
                       <h3 className="text-2xl font-semibold text-foreground">
-                        Endlich frei: ShamSy wird offiziell
+                        Die Befreiung nach 55 Jahren! ShamSy wird offiziell
                       </h3>
                     </div>
                     <p className="text-muted-foreground leading-relaxed mb-6">
-                      Mit dem Fall des Assad-Regimes können wir endlich offen und offiziell arbeiten! 
-                      ShamSy wird als gemeinnütziger Verein in Deutschland gegründet. 
-                      Keine Angst mehr, keine Geheimhaltung - nur pure Mission und Hoffnung.
+                      Nach über einem halben Jahrhundert Diktatur ist Syrien endlich frei. Zum ersten Mal können wir ohne Angst leben, ohne Verstecken helfen, ohne Korruption wiederaufbauen. Ein neues Kapitel beginnt für unser geliebtes aber ausgebeutetes Land. Ein entscheidendes Kapitel für die Zukunft Syriens, was wir aber diesmal alle mit gestalten können.<br>ShamSy e.V. ist jetzt offiziell als NGO registriert - in Deutschland und in Syrien. Was einst im Schatten und über Dritte geschah, führen wir nun offiziell fort. Durch unsere Jahre in Syrien und in Deutschland haben wir diverse Erfahrung und weitgestreckte Netzwerke etabliert. Damit bauen wir unser Land nachhaltig und für Alle wieder auf. Wir haben die Hoffnung einer ganzen Generation!
                     </p>
                     
                     <div className="bg-gradient-to-r from-shamsy-primary/10 to-shamsy-light/10 p-6 rounded-lg border border-shamsy-primary/20">
@@ -169,7 +159,7 @@ const Geschichte = () => {
                         </li>
                         <li className="flex items-center gap-2">
                           <div className="w-2 h-2 bg-shamsy-primary rounded-full"></div>
-                          Gesundheitssystem nach europäischen Standards
+                          Gesundheitssystem nach heutigen Standards
                         </li>
                         <li className="flex items-center gap-2">
                           <div className="w-2 h-2 bg-shamsy-primary rounded-full"></div>
