@@ -23,7 +23,7 @@ const Mitmachen = () => {
       subtitle: "Direkte finanzielle Unterstützung",
       icon: Heart,
       color: "shamsy-primary",
-      description: "Ihre Spende fließt zu 100% in unsere Projekte. Jeder Euro hilft beim Wiederaufbau Syriens.",
+      description: "Ihre Spende fließt zu 100% in die richtigen Händen. Sie können auch direkt für ein Projekt spenden. Jeder Euro hilft beim Wiederaufbau Syriens.",
       benefits: [
         "Transparente Verwendung Ihrer Spende",
         "Regelmäßige Updates über Projektfortschritte", 
@@ -87,10 +87,10 @@ const Mitmachen = () => {
   ];
 
   const currentStats = {
-    totalDonated: "€60,000",
-    activeMembers: 45,
-    volunteers: 12,
-    partnerships: 3
+    totalDonated: "€300,000",
+    activeMembers: 10,
+    volunteers: 10,
+    partnerships: 1
   };
 
   return (
