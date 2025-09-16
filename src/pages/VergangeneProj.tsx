@@ -29,7 +29,7 @@ const VergangeneProj = () => {
       image: "/shamsy/images/kindergruppe.jpg"
     },
     {
-      id: 2,
+      id: 3,
       title: "Medizinische Operationen ermöglicht",
       category: "Gesundheit",
       location: "Verschiedene Krankenhäuser",
@@ -43,7 +43,7 @@ const VergangeneProj = () => {
       image: "/shamsy/images/operation.jpg"
     },
     {
-      id: 3,
+      id: 2,
       title: "15 Notunterkünfte gebaut",
       category: "Unterkünfte",
       location: "Eastern Ghouta",
