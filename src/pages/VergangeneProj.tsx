@@ -270,11 +270,11 @@ const VergangeneProj = () => {
               </div>
               
               <blockquote className="text-2xl md:text-3xl font-light italic text-foreground mb-8 leading-relaxed">
-                "Jedes dieser Projekte kam aus der Not. Unser Diktator hat ganze Städte zerstört, viele umgebracht oder verhaftet, und alle rote Linien überschritten. Hilfe war dort verboten, wo bombardiert wurde. Familien von Verhafteten mussten auf die Straße. Verletzte aus Kriegsgebieten durften nur heimlich versorgt werden. Es war grausam... Aber die Diktatur ist vorbei!"
+                "Jedes dieser Projekte kam aus der Not. Unser Diktator hat ganze Städte und viele Familien zerstört. Er hat alle rote Linien überschritten. Hilfe war dort verboten, wo Bomben gefallen sind. Familien von politischen Gefangenen wurden vertrieben. Verletzte aus Kriegsgebieten durften nur heimlich versorgt werden. Es war grausam... Aber die Diktatur ist vorbei!"
               </blockquote>
               
               <cite className="text-lg font-semibold text-shamsy-primary">
-                — Ein ShamSy Gründungsmitglied
+                — Yazan, ShamSy Gründungsmitglied
               </cite>
 
               <div className="mt-8 p-6 bg-shamsy-primary/5 rounded-lg border border-shamsy-primary/20">
