@@ -141,7 +141,8 @@ const Geschichte = () => {
                       </h3>
                     </div>
                     <p className="text-muted-foreground leading-relaxed mb-6">
-                      Nach über einem halben Jahrhundert Diktatur ist Syrien endlich frei. Zum ersten Mal können wir ohne Angst leben, ohne Verstecken helfen, ohne Korruption wiederaufbauen. Ein neues Kapitel beginnt für unser geliebtes aber ausgebeutetes Land. Ein entscheidendes Kapitel für die Zukunft Syriens, was wir aber diesmal alle mit gestalten können.<br>ShamSy e.V. ist jetzt offiziell als NGO registriert - in Deutschland und in Syrien. Was einst im Schatten und über Dritte geschah, führen wir nun offiziell fort. Durch unsere Jahre in Syrien und in Deutschland haben wir diverse Erfahrung und weitgestreckte Netzwerke etabliert. Damit bauen wir unser Land nachhaltig und für Alle wieder auf. Wir haben die Hoffnung einer ganzen Generation!
+                      Nach über einem halben Jahrhundert Diktatur ist Syrien endlich frei. Zum ersten Mal können wir ohne Angst leben, ohne Verstecken helfen, ohne Korruption wiederaufbauen. Ein neues Kapitel beginnt für unser geliebtes aber ausgebeutetes Land. Ein entscheidendes Kapitel für die Zukunft Syriens, was wir aber diesmal alle mit gestalten können.
+ShamSy e.V. ist jetzt offiziell als NGO registriert - in Deutschland und in Syrien. Was einst im Schatten und über Dritte geschah, führen wir nun offiziell fort. Durch unsere Jahre in Syrien und in Deutschland haben wir diverse Erfahrung und weitgestreckte Netzwerke etabliert. Damit bauen wir unser Land nachhaltig und für Alle wieder auf. Wir haben die Hoffnung einer ganzen Generation!
                     </p>
                     
                     <div className="bg-gradient-to-r from-shamsy-primary/10 to-shamsy-light/10 p-6 rounded-lg border border-shamsy-primary/20">
