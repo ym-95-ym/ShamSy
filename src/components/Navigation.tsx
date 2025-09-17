@@ -65,7 +65,7 @@ const Navigation = () => {
                 asChild 
                 className="bg-shamsy-primary hover:bg-shamsy-dark shamsy-transition shamsy-shadow-green"
               >
-                <Link to="/shamsy/pages/spenden" className="flex items-center gap-2">
+                <Link to="/shamsy/src/pages/spenden" className="flex items-center gap-2">
                   <Heart className="w-4 h-4" />
                   Jetzt Spenden
                 </Link>
@@ -118,7 +118,7 @@ const Navigation = () => {
                   className="w-full bg-shamsy-primary hover:bg-shamsy-dark shamsy-transition"
                   size="lg"
                 >
-                  <Link to="/shamsy/pages/spenden" className="flex items-center justify-center gap-2">
+                  <Link to="/shamsy/src/pages/spenden" className="flex items-center justify-center gap-2">
                     <Heart className="w-4 h-4" />
                     Jetzt Spenden
                   </Link>
