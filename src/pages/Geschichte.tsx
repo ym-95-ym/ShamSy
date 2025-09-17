@@ -35,7 +35,7 @@ const Geschichte = () => {
             {/* Timeline Items */}
             <div className="space-y-12">
               
-              {/* 2011-2015 - Der Anfang */}
+              {/* 2011 - Der Anfang */}
               <div className="flex gap-8 items-start">
                 <div className="flex-shrink-0 w-24 h-24 bg-shamsy-primary/10 rounded-full flex items-center justify-center">
                   <Calendar className="w-8 h-8 text-shamsy-primary" />
@@ -60,7 +60,7 @@ const Geschichte = () => {
                 </Card>
               </div>
 
-              {/* 2015-2019 - Aufbau in Deutschland */}
+              {/* 2012-2020 - Aufbau in Deutschland */}
               <div className="flex gap-8 items-start">
                 <div className="flex-shrink-0 w-24 h-24 bg-shamsy-primary/10 rounded-full flex items-center justify-center">
                   <Users className="w-8 h-8 text-shamsy-primary" />
@@ -88,7 +88,7 @@ const Geschichte = () => {
                 </Card>
               </div>
 
-              {/* 2011-2024 - Heimliche Hilfe */}
+              {/* 2020-2024 - Heimliche Hilfe */}
               <div className="flex gap-8 items-start">
                 <div className="flex-shrink-0 w-24 h-24 bg-shamsy-primary/10 rounded-full flex items-center justify-center">
                   <Target className="w-8 h-8 text-shamsy-primary" />
