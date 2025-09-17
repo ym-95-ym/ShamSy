@@ -124,7 +124,7 @@ const Navigation = () => {
                   </Link>
                 </Button>
               </div>
-              
+               
               {/* Language Options */}
               <div className="pt-4 border-t border-shamsy-primary/10">
                 <p className="text-shamsy-primary font-semibold text-sm mb-2">Sprache:</p>
