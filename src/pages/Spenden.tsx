@@ -29,7 +29,7 @@ const Spenden = () => {
   const [donationType, setDonationType] = useState<"single" | "monthly">("single");
   const [selectedProject, setSelectedProject] = useState("general");
 
-  const quickAmounts = [25, 50, 100, 250, 500, 1000];
+  const quickAmounts = [5, 10, 25, 50, 100, 250, 500, 1000];
   
   const projects = [
     {
@@ -41,28 +41,36 @@ const Spenden = () => {
       raised: 28500
     },
     {
+      id: "patenschaft",
+      name: "Waisenkind Patenschaft",
+      description: "Komplette Versorgung und Übernahme von Schulkosten für ein Jahr.",
+      progress: 100,
+      goal: mtl.,
+      raised: 17
+    },
+    {
       id: "solar",
-      name: "Solarenergie Aleppo",
-      description: "500 Haushalte in Aleppo mit nachhaltiger Solarenergie versorgen.",
-      progress: 75,
-      goal: 50000,
-      raised: 37500
+      name: "Solarenergie Rural Damaskus",
+      description: "500 Haushalte in Der El-Asafir, ein kleiner Dorf,mit nachhaltiger Solarenergie versorgen.",
+      progress: 25,
+      goal: 400000,
+      raised: 100500
     },
     {
       id: "school",
-      name: "Schulrenovierung Damaskus",
-      description: "Moderne Bildungsinfrastruktur für 800 Schulkinder schaffen.",
-      progress: 25,
-      goal: 30000,
-      raised: 7500
+      name: "Schulrenovierung Rural Damaskus",
+      description: "Kompletter Wiederaufbau von 5 Schulen in Douma, ein zerstörter großer Stadtteil. Eine Zukunft für Schulkinder schaffen.",
+      progress: 0,
+      goal: 25000,
+      raised: 0
     },
     {
       id: "medical",
-      name: "Mobile Klinik Idlib", 
-      description: "Medizinische Versorgung in entlegene Gebiete bringen.",
-      progress: 60,
-      goal: 25000,
-      raised: 15000
+      name: "Krankenhaus Wiederaufbau", 
+      description: "Ein zu Boden zerbombtes Krankenhaus in Douma Wiederaufbauen. Bis zu 1 Mio. Patienten pro Jahr medizinisch versorgen.",
+      progress: 25,
+      goal: 320000,
+      raised: 80000
     }
   ];
 
