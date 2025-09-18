@@ -197,5 +197,5 @@ ShamSy e.V. ist jetzt offiziell als NGO registriert - in Deutschland und in Syri
     </div>
   );
 };
-
+ 
 export default Geschichte;
