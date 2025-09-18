@@ -65,7 +65,6 @@ const App = () => (
             </Routes>
           </main>
           <Footer />
-        </div>
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>
