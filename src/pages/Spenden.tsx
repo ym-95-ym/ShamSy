@@ -45,7 +45,7 @@ const Spenden = () => {
       name: "Waisenkind Patenschaft",
       description: "Komplette Versorgung und Übernahme von Schulkosten für ein Jahr.",
       progress: 100,
-      goal: 200
+      goal: 200,
       raised: 0
     },
     {
