@@ -9,7 +9,7 @@ const Geschichte = () => {
         title="Unsere Geschichte"
         subtitle="Von der Flucht zur Mission - Ein Weg voller Herausforderungen und Hoffnung"
       />
-
+ 
       {/* Timeline Section */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
