@@ -35,7 +35,7 @@ const Spenden = () => {
     {
       id: "general",
       name: "Wo am nötigsten",
-      description: "Unterstützen Sie uns dabei, die Mittel dort einzusetzen, wo sie am dringendsten gebraucht werden."
+      description: "Unterstützen Sie uns dabei, die Mittel dort einzusetzen, wo sie am dringendsten gebraucht werden.",
       progress: 0,
       goal: 21000,
       raised: 0
