@@ -87,7 +87,7 @@ const Mitmachen = () => {
   ];
 
   const currentStats = {
-    totalDonated: "€300,000",
+    totalDonated: "300,000 €",
     activeMembers: 10,
     volunteers: 10,
     partnerships: 1
@@ -119,7 +119,7 @@ const Mitmachen = () => {
                 <div className="text-3xl font-bold text-shamsy-primary mb-2">
                   {currentStats.totalDonated}
                 </div>
-                <div className="text-sm text-muted-foreground">Spendengelder erhalten</div>
+                <div className="text-sm text-muted-foreground">Spendengelder mit unseren Partnern eingesetzt</div>
               </CardContent>
             </Card>
 
