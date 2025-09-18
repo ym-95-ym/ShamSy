@@ -33,15 +33,15 @@ const Geschichte = () => {
             </Card>
 
             {/* Timeline Items */}
-            <div className="space-y-12">
+            <div className="space-y-8 md:space-y-12">
               
               {/* 2011 - Der Anfang */}
-              <div className="flex gap-8 items-start">
-                <div className="flex-shrink-0 w-24 h-24 bg-shamsy-primary/10 rounded-full flex items-center justify-center">
-                  <Calendar className="w-8 h-8 text-shamsy-primary" />
+              <div className="flex gap-4 md:gap-8 items-start">
+                <div className="flex-shrink-0 w-16 h-16 md:w-24 md:h-24 bg-shamsy-primary/10 rounded-full flex items-center justify-center">
+                  <Calendar className="w-5 h-5 md:w-8 md:h-8 text-shamsy-primary" />
                 </div>
                 <Card className="shamsy-card border-shamsy-primary/20 flex-grow">
-                  <CardContent className="p-8">
+                  <CardContent className="p-4 md:p-8">
                     <div className="flex items-center gap-3 mb-4">
                       <span className="bg-shamsy-primary text-white px-3 py-1 rounded-full text-sm font-semibold">
                         2011-2015
@@ -61,12 +61,12 @@ const Geschichte = () => {
               </div>
 
               {/* 2012-2020 - Aufbau in Deutschland */}
-              <div className="flex gap-8 items-start">
-                <div className="flex-shrink-0 w-24 h-24 bg-shamsy-primary/10 rounded-full flex items-center justify-center">
-                  <Users className="w-8 h-8 text-shamsy-primary" />
+              <div className="flex gap-4 md:gap-8 items-start">
+                <div className="flex-shrink-0 w-16 h-16 md:w-24 md:h-24 bg-shamsy-primary/10 rounded-full flex items-center justify-center">
+                  <Users className="w-5 h-5 md:w-8 md:h-8 text-shamsy-primary" />
                 </div>
                 <Card className="shamsy-card border-shamsy-primary/20 flex-grow">
-                  <CardContent className="p-8">
+                  <CardContent className="p-4 md:p-8">
                     <div className="flex items-center gap-3 mb-4">
                       <span className="bg-shamsy-primary text-white px-3 py-1 rounded-full text-sm font-semibold">
                         2015-2019
@@ -89,12 +89,12 @@ const Geschichte = () => {
               </div>
 
               {/* 2020-2024 - Heimliche Hilfe */}
-              <div className="flex gap-8 items-start">
-                <div className="flex-shrink-0 w-24 h-24 bg-shamsy-primary/10 rounded-full flex items-center justify-center">
-                  <Target className="w-8 h-8 text-shamsy-primary" />
+              <div className="flex gap-4 md:gap-8 items-start">
+                <div className="flex-shrink-0 w-16 h-16 md:w-24 md:h-24 bg-shamsy-primary/10 rounded-full flex items-center justify-center">
+                  <Target className="w-5 h-5 md:w-8 md:h-8 text-shamsy-primary" />
                 </div>
                 <Card className="shamsy-card border-shamsy-primary/20 flex-grow">
-                  <CardContent className="p-8">
+                  <CardContent className="p-4 md:p-8">
                     <div className="flex items-center gap-3 mb-4">
                       <span className="bg-shamsy-primary text-white px-3 py-1 rounded-full text-sm font-semibold">
                         2011-2024
@@ -126,12 +126,12 @@ const Geschichte = () => {
               </div>
 
               {/* 2025 - Die Befreiung */}
-              <div className="flex gap-8 items-start">
-                <div className="flex-shrink-0 w-24 h-24 bg-shamsy-light/20 rounded-full flex items-center justify-center ring-4 ring-shamsy-light/30">
-                  <Heart className="w-8 h-8 text-shamsy-primary" />
+              <div className="flex gap-4 md:gap-8 items-start">
+                <div className="flex-shrink-0 w-16 h-16 md:w-24 md:h-24 bg-shamsy-light/20 rounded-full flex items-center justify-center ring-2 md:ring-4 ring-shamsy-light/30">
+                  <Heart className="w-5 h-5 md:w-8 md:h-8 text-shamsy-primary" />
                 </div>
                 <Card className="shamsy-card border-shamsy-light/30 flex-grow shadow-2xl">
-                  <CardContent className="p-8">
+                  <CardContent className="p-4 md:p-8">
                     <div className="flex items-center gap-3 mb-4">
                       <span className="bg-gradient-to-r from-shamsy-primary to-shamsy-light text-white px-4 py-2 rounded-full text-sm font-semibold">
                         2025-Heute
@@ -181,7 +181,7 @@ ShamSy e.V. ist jetzt offiziell als NGO registriert - in Deutschland und in Syri
       <section className="py-20 shamsy-bg-gradient">
         <div className="container mx-auto px-4 text-center">
           <Card className="shamsy-card border-shamsy-primary/20 max-w-4xl mx-auto">
-            <CardContent className="p-12">
+            <CardContent className="p-6 md:p-12">
               <h2 className="text-3xl md:text-4xl font-light text-foreground mb-8">
                 Heute: Frei, offen, hoffnungsvoll
               </h2>
