@@ -13,7 +13,7 @@ import {
   Target,
   CheckCircle
 } from "lucide-react";
-
+ 
 const Projekte = () => {
   // Kleinere humanitäre Projekte
   const humanitarianProjects = [
