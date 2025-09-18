@@ -147,20 +147,20 @@ const Projekte = () => {
             </Card>
             <Card className="shamsy-card border-shamsy-primary/20 text-center">
               <CardContent className="p-6">
-                <div className="text-3xl font-bold text-shamsy-primary mb-2">1Mio+</div>
+                <div className="text-3xl font-bold text-shamsy-primary mb-2">1 Mio+</div>
                 <div className="text-sm text-muted-foreground">Menschen helfen</div>
               </CardContent>
             </Card>
             <Card className="shamsy-card border-shamsy-primary/20 text-center">
               <CardContent className="p-6">
-                <div className="text-3xl font-bold text-shamsy-primary mb-2">Ab €17 mtl.</div>
+                <div className="text-3xl font-bold text-shamsy-primary mb-2">ab 17 € mtl.</div>
                 <div className="text-sm text-muted-foreground">Waisenkind versorgen</div>
               </CardContent>
             </Card>
             <Card className="shamsy-card border-shamsy-primary/20 text-center">
               <CardContent className="p-6">
-                <div className="text-3xl font-bold text-shamsy-primary mb-2">€80</div>
-                <div className="text-sm text-muted-foreground">Familie versprgen</div>
+                <div className="text-3xl font-bold text-shamsy-primary mb-2">80 €</div>
+                <div className="text-sm text-muted-foreground">Familie versorgen</div>
               </CardContent>
             </Card>
           </div>
