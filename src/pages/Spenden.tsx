@@ -35,18 +35,14 @@ const Spenden = () => {
     {
       id: "general",
       name: "Wo am nötigsten",
-      description: "Unterstützen Sie uns dabei, die Mittel dort einzusetzen, wo sie am dringendsten gebraucht werden.",
-      progress: 57,
-      goal: 50000,
-      raised: 28500
+      description: "Unterstützen Sie uns dabei, die Mittel dort einzusetzen, wo sie am dringendsten gebraucht werden."
     },
     {
       id: "patenschaft",
       name: "Waisenkind Patenschaft",
       description: "Komplette Versorgung und Übernahme von Schulkosten für ein Jahr.",
       progress: 100,
-      goal: 200,
-      raised: 0
+      goal: 200
     },
     {
       id: "solar",
