@@ -36,6 +36,9 @@ const Spenden = () => {
       id: "general",
       name: "Wo am nötigsten",
       description: "Unterstützen Sie uns dabei, die Mittel dort einzusetzen, wo sie am dringendsten gebraucht werden."
+      progress: 0,
+      goal: 21000,
+      raised: 0
     },
     {
       id: "patenschaft",
@@ -43,6 +46,7 @@ const Spenden = () => {
       description: "Komplette Versorgung und Übernahme von Schulkosten für ein Jahr.",
       progress: 100,
       goal: 200
+      raised: 0
     },
     {
       id: "solar",
