@@ -216,6 +216,16 @@ const Mitmachen = () => {
                           <span className="truncate">{option.cta}</span>
                           <ArrowRight className="w-4 h-4 flex-shrink-0" />
                         </a>
+                      ) : option.id === 2 ? (
+                        <a href="mailto:info.shamsyr@gmail.com?subject=Vereinsmitgliedschaft&body=Hallo, ich interessiere mich für eine Vereinsmitgliedschaft bei ShamSy." className="flex items-center justify-center gap-2 w-full">
+                          <span className="truncate">{option.cta}</span>
+                          <ArrowRight className="w-4 h-4 flex-shrink-0" />
+                        </a>
+                      ) : option.id === 4 ? (
+                        <a href="mailto:info.shamsyr@gmail.com?subject=Unternehmenspartnerschaft&body=Hallo, wir interessieren uns für eine Unternehmenspartnerschaft mit ShamSy." className="flex items-center justify-center gap-2 w-full">
+                          <span className="truncate">{option.cta}</span>
+                          <ArrowRight className="w-4 h-4 flex-shrink-0" />
+                        </a>
                       ) : (
                         <Link to={option.ctaLink} className="flex items-center justify-center gap-2 w-full">
                           <span className="truncate">{option.cta}</span>

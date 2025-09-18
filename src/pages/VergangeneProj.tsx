@@ -115,7 +115,7 @@ const VergangeneProj = () => {
                   </h3>
                   <p className="text-orange-700 leading-relaxed text-sm md:text-lg">
                     <strong>Alle Projekte vor 2024 wurden unter der Assad-Diktatur durchgeführt.</strong> 
-                    Das bedeutete: Ständige Angst vor Verfolgung, Geheimhaltung zum Schutz unserer Familien in Syrien,und enorme logistische Herausforderungen. Jedes Projekt war ein Risiko - aber auch ein Akt der Hoffnung. Alles wäre unmöglich ohne Unterstützung unserer Partner NGOs und Kollegen in Syrien.
+                    Das bedeutete: Ständige Angst vor Verfolgung, Geheimhaltung zum Schutz unserer Familien in Syrien sowie enorme logistische Herausforderungen. Jedes Projekt war ein Risiko - aber auch ein Akt der Hoffnung. Alles wäre unmöglich ohne Unterstützung unserer Partner NGOs und Kollegen in Syrien.
                   </p>
                 </div>
               </div>
@@ -136,26 +136,28 @@ const VergangeneProj = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8">
-            <Card className="shamsy-card border-shamsy-primary/20 text-center">
-              <CardContent className="p-4 md:p-8">
-                <Star className="w-8 h-8 md:w-12 md:h-12 text-shamsy-primary mx-auto mb-3 md:mb-4" />
-                <div className="text-2xl md:text-4xl font-bold text-shamsy-primary mb-1 md:mb-2">
-                  {totalStats.projectCount}
-                </div>
-                <div className="text-xs md:text-sm text-muted-foreground">Projekte erfolgreich durchgeführt</div>
-              </CardContent>
-            </Card>
-            
-            <Card className="shamsy-card border-shamsy-primary/20 text-center">
-              <CardContent className="p-4 md:p-8">
-                <ShieldCheck className="w-8 h-8 md:w-12 md:h-12 text-shamsy-primary mx-auto mb-3 md:mb-4" />
-                <div className="text-2xl md:text-4xl font-bold text-shamsy-primary mb-1 md:mb-2">
-                  €{totalStats.totalCost.toLocaleString()}
-                </div>
-                <div className="text-xs md:text-sm text-muted-foreground">Spendengelder eingesetzt</div>
-              </CardContent>
-            </Card>
+          <div className="flex justify-center">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-8 max-w-2xl">
+              <Card className="shamsy-card border-shamsy-primary/20 text-center">
+                <CardContent className="p-4 md:p-8">
+                  <Star className="w-8 h-8 md:w-12 md:h-12 text-shamsy-primary mx-auto mb-3 md:mb-4" />
+                  <div className="text-2xl md:text-4xl font-bold text-shamsy-primary mb-1 md:mb-2">
+                    {totalStats.projectCount}
+                  </div>
+                  <div className="text-xs md:text-sm text-muted-foreground">Projekte erfolgreich durchgeführt</div>
+                </CardContent>
+              </Card>
+              
+              <Card className="shamsy-card border-shamsy-primary/20 text-center">
+                <CardContent className="p-4 md:p-8">
+                  <ShieldCheck className="w-8 h-8 md:w-12 md:h-12 text-shamsy-primary mx-auto mb-3 md:mb-4" />
+                  <div className="text-2xl md:text-4xl font-bold text-shamsy-primary mb-1 md:mb-2">
+                    €{totalStats.totalCost.toLocaleString()}
+                  </div>
+                  <div className="text-xs md:text-sm text-muted-foreground">Spendengelder eingesetzt</div>
+                </CardContent>
+              </Card>
+            </div>
           </div>
         </div>
       </section>

@@ -32,13 +32,13 @@ const Home = () => {
             
             <div className="space-y-6 mb-12 text-lg md:text-xl leading-relaxed drop-shadow-md">
               <p>
-                Syrien ist ein Land voller Narben — <strong>14 Jahre Krieg, 55 Jahre Diktatur,</strong> sowie Mangel an den wichtigsten Lebensgrundlagen.
+                Syrien ist ein Land voller Narben durch <strong>14 Jahre Krieg, 55 Jahre Diktatur,</strong> sowie Mangel an den wichtigsten Lebensgrundlagen.
               </p>
               
               <p>
                 Doch trotz all dieser Dunkelheit gibt es Hoffnung: Menschen, die geblieben sind. Menschen, die zurückkehren. 
-                Menschen wie wir, die <strong>Brücken zwischen der Welt und einem zerstörten Syrien</strong> schlagen.<br/>
-                Wir unterstützen aus Deutschland, in dem wir auch Zuhause sind.
+                Menschen wie wir, die <strong>Brücken zwischen der Welt und dem zerstörten Syrien</strong> schlagen.<br/>
+                Wir unterstützen aus Deutschland, wo wir auch Zuhause sind.
               </p>
             </div>
             
@@ -74,8 +74,8 @@ const Home = () => {
       <section className="py-20 shamsy-bg-gradient">
         <div className="container mx-auto px-4 text-center">
           <blockquote className="text-2xl md:text-4xl font-light italic text-foreground max-w-5xl mx-auto mb-8 leading-relaxed">
-            "Als <strong>Syrer</strong> können wir den Erfolg relevanter Projekte sicherstellen und durch unsere <strong>bestehenden Netzwerke</strong> schnell realisieren.<br/>
-            Als <strong>Deutsche</strong> können wir die Projekte <strong>nachhaltig und zeitgemäß</strong> gestalten und eine Brücke für Integration und Zusammenarbeit bauen."
+            "Als <strong className="text-shamsy-primary">Syrer</strong> können wir den Erfolg relevanter Projekte sicherstellen und durch unsere <strong className="text-shamsy-primary">bestehenden Netzwerke</strong> schnell realisieren.<br/>
+            Als <strong className="text-shamsy-primary">Deutsche</strong> können wir die Projekte <strong className="text-shamsy-primary">nachhaltig und zeitgemäß</strong> gestalten und eine Brücke für Integration und Zusammenarbeit bauen."
           </blockquote>
           <cite className="text-xl md:text-2xl font-semibold text-shamsy-primary">
             — Das ShamSy Team

@@ -4,7 +4,6 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { Textarea } from "@/components/ui/textarea";
 import { Badge } from "@/components/ui/badge";
 import { 
   Heart, 
@@ -37,21 +36,45 @@ const Spenden = () => {
       name: "Wo am nötigsten",
       description: "Unterstützen Sie uns dabei, die Mittel dort einzusetzen, wo sie am dringendsten gebraucht werden.",
       progress: 0,
-      goal: 21000,
+      goal: 0,
       raised: 0
     },
     {
       id: "patenschaft",
       name: "Waisenkind Patenschaft",
       description: "Komplette Versorgung und Übernahme von Schulkosten für ein Jahr.",
-      progress: 100,
-      goal: 200,
+      progress: 0,
+      goal: 80,
+      raised: 0
+    },
+    {
+      id: "schulanfang", 
+      name: "Schönen Schulanfang ermöglichen",
+      description: "Kleidung, Rücksack, Hefte, Stifte für einen ordentlichen Schulanfang.",
+      progress: 0,
+      goal: 40,
+      raised: 0
+    },
+    {
+      id: "gehalt",
+      name: "Monatsgehalt an Familie schenken", 
+      description: "Eine Familie in Not für einen Monat unterstützen.",
+      progress: 0,
+      goal: 80,
+      raised: 0
+    },
+    {
+      id: "brunnen",
+      name: "Trinkwasserbrunnen für Dorf",
+      description: "Anschaffung und Installation eines Trinkwasserbrunnens für ein kleines Dorf.",
+      progress: 0,
+      goal: 1000,
       raised: 0
     },
     {
       id: "solar",
       name: "Solarenergie Rural Damaskus",
-      description: "500 Haushalte in Der El-Asafir, ein kleiner Dorf,mit nachhaltiger Solarenergie versorgen.",
+      description: "500 Haushalte in Der El-Asafir mit nachhaltiger Solarenergie versorgen.",
       progress: 25,
       goal: 400000,
       raised: 100500
@@ -59,17 +82,17 @@ const Spenden = () => {
     {
       id: "school",
       name: "Schulrenovierung Rural Damaskus",
-      description: "Kompletter Wiederaufbau von 5 Schulen in Douma, ein zerstörter großer Stadtteil. Eine Zukunft für Schulkinder schaffen.",
+      description: "Kompletter Wiederaufbau von 5 Schulen in Douma für eine ganze Generation.",
       progress: 0,
-      goal: 25000,
+      goal: 250000,
       raised: 0
     },
     {
       id: "medical",
       name: "Krankenhaus Wiederaufbau", 
-      description: "Ein zu Boden zerbombtes Krankenhaus in Douma Wiederaufbauen. Bis zu 1 Mio. Patienten pro Jahr medizinisch versorgen.",
+      description: "Ein zerstörtes Krankenhaus in Douma wiederaufbauen - bis zu 1 Mio. Patienten pro Jahr.",
       progress: 25,
-      goal: 320000,
+      goal: 350000,
       raised: 80000
     }
   ];
@@ -102,56 +125,6 @@ const Spenden = () => {
             {/* Main Donation Form */}
             <div className="lg:col-span-2 space-y-8">
               
-              {/* Project Selection */}
-              <Card className="shamsy-card border-shamsy-primary/20">
-                <CardContent className="p-8">
-                  <h2 className="text-2xl font-semibold text-foreground mb-6 flex items-center gap-2">
-                    <Target className="w-6 h-6 text-shamsy-primary" />
-                    Projekt auswählen
-                  </h2>
-                  
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    {projects.map((project) => (
-                      <div
-                        key={project.id}
-                        className={`p-4 rounded-lg border-2 cursor-pointer shamsy-transition ${
-                          selectedProject === project.id
-                            ? 'border-shamsy-primary bg-shamsy-primary/5'
-                            : 'border-gray-200 hover:border-shamsy-primary/50 hover:bg-shamsy-primary/2'
-                        }`}
-                        onClick={() => setSelectedProject(project.id)}
-                      >
-                        <div className="flex items-center gap-2 mb-2">
-                          <input
-                            type="radio"
-                            name="project"
-                            checked={selectedProject === project.id}
-                            onChange={() => setSelectedProject(project.id)}
-                            className="text-shamsy-primary"
-                          />
-                          <h3 className="font-semibold text-foreground">{project.name}</h3>
-                        </div>
-                        <p className="text-sm text-muted-foreground mb-3">{project.description}</p>
-                        
-                        {/* Progress Bar */}
-                        <div className="space-y-1">
-                          <div className="flex justify-between text-xs">
-                            <span className="text-shamsy-primary font-medium">{project.progress}%</span>
-                            <span className="text-muted-foreground">€{project.raised.toLocaleString()} / €{project.goal.toLocaleString()}</span>
-                          </div>
-                          <div className="w-full bg-gray-200 rounded-full h-2">
-                            <div 
-                              className="bg-gradient-to-r from-shamsy-primary to-shamsy-light h-2 rounded-full shamsy-transition"
-                              style={{ width: `${project.progress}%` }}
-                            />
-                          </div>
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-                </CardContent>
-              </Card>
-
               {/* Donation Type */}
               <Card className="shamsy-card border-shamsy-primary/20">
                 <CardContent className="p-8">
@@ -211,6 +184,122 @@ const Spenden = () => {
                         Regelmäßige Unterstützung ermöglicht uns nachhaltige Projektplanung.
                       </p>
                     </div>
+                  </div>
+                </CardContent>
+              </Card>
+
+              {/* Project Selection with Dropdowns */}
+              <Card className="shamsy-card border-shamsy-primary/20">
+                <CardContent className="p-8">
+                  <h2 className="text-2xl font-semibold text-foreground mb-6 flex items-center gap-2">
+                    <Target className="w-6 h-6 text-shamsy-primary" />
+                    Projekt auswählen
+                  </h2>
+                  
+                  <div className="space-y-4">
+                    {/* Wo am nötigsten - Always visible */}
+                    <div
+                      className={`p-4 rounded-lg border-2 cursor-pointer shamsy-transition ${
+                        selectedProject === "general"
+                          ? 'border-shamsy-primary bg-shamsy-primary/5'
+                          : 'border-gray-200 hover:border-shamsy-primary/50 hover:bg-shamsy-primary/2'
+                      }`}
+                      onClick={() => setSelectedProject("general")}
+                    >
+                      <div className="flex items-center gap-2 mb-2">
+                        <input
+                          type="radio"
+                          name="project"
+                          checked={selectedProject === "general"}
+                          onChange={() => setSelectedProject("general")}
+                          className="text-shamsy-primary"
+                        />
+                        <h3 className="font-semibold text-foreground">Wo am nötigsten</h3>
+                      </div>
+                      <p className="text-sm text-muted-foreground">
+                        Unterstützen Sie uns dabei, die Mittel dort einzusetzen, wo sie am dringendsten gebraucht werden.
+                      </p>
+                    </div>
+
+                    {/* Projekte unter 100€ - Dropdown */}
+                    <details className="group">
+                      <summary className="p-4 rounded-lg border-2 border-gray-200 hover:border-shamsy-primary/50 cursor-pointer shamsy-transition list-none">
+                        <div className="flex items-center justify-between">
+                          <h3 className="font-semibold text-foreground">Projekte unter 100€</h3>
+                          <span className="group-open:rotate-180 shamsy-transition text-shamsy-primary">⌄</span>
+                        </div>
+                      </summary>
+                      <div className="mt-2 space-y-2 pl-4">
+                        {projects.filter(p => p.id !== "general" && p.goal <= 100).map((project) => (
+                          <div
+                            key={project.id}
+                            className={`p-3 rounded-lg border cursor-pointer shamsy-transition ${
+                              selectedProject === project.id
+                                ? 'border-shamsy-primary bg-shamsy-primary/5'
+                                : 'border-gray-200 hover:border-shamsy-primary/50'
+                            }`}
+                            onClick={() => setSelectedProject(project.id)}
+                          >
+                            <div className="flex items-center gap-2 mb-1">
+                              <input
+                                type="radio"
+                                name="project"
+                                checked={selectedProject === project.id}
+                                onChange={() => setSelectedProject(project.id)}
+                                className="text-shamsy-primary"
+                              />
+                              <h4 className="font-medium text-sm text-foreground">{project.name}</h4>
+                            </div>
+                            <p className="text-xs text-muted-foreground">{project.description}</p>
+                          </div>
+                        ))}
+                      </div>
+                    </details>
+
+                    {/* Großprojekte - Dropdown */}
+                    <details className="group">
+                      <summary className="p-4 rounded-lg border-2 border-gray-200 hover:border-shamsy-primary/50 cursor-pointer shamsy-transition list-none">
+                        <div className="flex items-center justify-between">
+                          <h3 className="font-semibold text-foreground">Großprojekte (Teilspenden möglich)</h3>
+                          <span className="group-open:rotate-180 shamsy-transition text-shamsy-primary">⌄</span>
+                        </div>
+                      </summary>
+                      <div className="mt-2 space-y-2 pl-4">
+                        {projects.filter(p => p.goal > 100).map((project) => (
+                          <div
+                            key={project.id}
+                            className={`p-3 rounded-lg border cursor-pointer shamsy-transition ${
+                              selectedProject === project.id
+                                ? 'border-shamsy-primary bg-shamsy-primary/5'
+                                : 'border-gray-200 hover:border-shamsy-primary/50'
+                            }`}
+                            onClick={() => setSelectedProject(project.id)}
+                          >
+                            <div className="flex items-center gap-2 mb-1">
+                              <input
+                                type="radio"
+                                name="project"
+                                checked={selectedProject === project.id}
+                                onChange={() => setSelectedProject(project.id)}
+                                className="text-shamsy-primary"
+                              />
+                              <h4 className="font-medium text-sm text-foreground">{project.name}</h4>
+                            </div>
+                            <p className="text-xs text-muted-foreground mb-2">{project.description}</p>
+                            <div className="flex justify-between text-xs">
+                              <span className="text-shamsy-primary font-medium">{project.progress}%</span>
+                              <span className="text-muted-foreground">€{project.raised.toLocaleString()} / €{project.goal.toLocaleString()}</span>
+                            </div>
+                            <div className="w-full bg-gray-200 rounded-full h-1 mt-1">
+                              <div 
+                                className="bg-gradient-to-r from-shamsy-primary to-shamsy-light h-1 rounded-full shamsy-transition"
+                                style={{ width: `${project.progress}%` }}
+                              />
+                            </div>
+                          </div>
+                        ))}
+                      </div>
+                    </details>
                   </div>
                 </CardContent>
               </Card>
@@ -320,6 +409,10 @@ const Spenden = () => {
                   >
                     {donationType === 'monthly' ? 'Monatliche Spende einrichten' : 'Jetzt Spenden'} - €{getCurrentAmount() || 0}
                   </Button>
+                  
+                  <div className="mt-4 text-center text-sm text-muted-foreground">
+                    💳 Sichere Zahlungsabwicklung über Stripe Integration
+                  </div>
                 </CardContent>
               </Card>
 
@@ -384,19 +477,19 @@ const Spenden = () => {
                   <div className="space-y-4">
                     {[
                       {
-                        title: "Solar-Installation Aleppo",
-                        progress: "15 von 20 Haushalten versorgt",
-                        date: "Diese Woche"
+                        title: "15 Notunterkünfte gebaut",
+                        progress: "120 Familien mit Wohnraum versorgt", 
+                        date: "2022-2024"
                       },
                       {
-                        title: "Schulmaterial Damaskus",
-                        progress: "200 Kinder ausgestattet",
-                        date: "Letzter Monat"
+                        title: "Schulen renoviert und ausgestattet",
+                        progress: "400 Schüler profitieren",
+                        date: "2022-2024"
                       },
                       {
-                        title: "Medizinische Hilfe",
-                        progress: "8 Operationen finanziert",
-                        date: "Januar 2025"
+                        title: "Medizinische Operationen",
+                        progress: "Lebensverändernde Eingriffe ermöglicht",
+                        date: "2011-2024"
                       }
                     ].map((success, index) => (
                       <div key={index} className="p-3 bg-shamsy-primary/5 rounded-lg border border-shamsy-primary/10">
