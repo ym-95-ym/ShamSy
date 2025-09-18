@@ -29,7 +29,7 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <BrowserRouter>
+      <BrowserRouter basename="/shamsy">  {/* ← DIESE ZEILE HINZUGEFÜGT */}
         <ScrollToTop />
         <div className="min-h-screen flex flex-col">
           <Navigation />
