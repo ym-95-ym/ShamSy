@@ -30,7 +30,7 @@ const Projekte = () => {
       id: 2,
       category: "Humanitär", 
       title: "Waisenkind Patenschaft - Ein Jahr Essen und Bildung",
-      price: "13 € mtl.",
+      price: "17 € mtl.",
       description: "Finanzierung von Lebensunterhalt und Bildungskosten eines Waisenindes in Syrien. Durch direkte Kommunikation mit unseren lokalen Partnern können wir für maximale Transparenz sorgen und sicherstellen, das das Geld an den richtigen Stellen kommt.",
       icon: Heart,
       image: "/shamsy/images/children.jpg"
