@@ -175,7 +175,7 @@ const Projekte = () => {
               Humanitäre Projekte
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Direkte Hilfe für Menschen in Not - jeder Beitrag kommt an
+              Direkte Hilfe für Menschen in Not - jeder Beitrag hilft enorm.
             </p>
           </div>
 
