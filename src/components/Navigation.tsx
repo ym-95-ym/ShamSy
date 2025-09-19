@@ -3,8 +3,8 @@ import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Menu, X, Heart } from "lucide-react";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
-import flagSyria from "@/assets/flag-syria-clean.jpg";
-import flagGermany from "@/assets/flag-germany.jpg";
+import flagSyria from "@/assets/flag-syria-clean.jpeg";
+import flagGermany from "@/assets/flag-germany.jpeg";
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
