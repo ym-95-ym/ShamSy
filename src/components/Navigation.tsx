@@ -2,6 +2,9 @@ import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Menu, X, Heart } from "lucide-react";
+import LanguageSwitcher from "@/components/LanguageSwitcher";
+import flagSyria from "@/assets/flag-syria-clean.jpeg";
+import flagGermany from "@/assets/flag-germany.jpeg";
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -21,13 +24,61 @@ const Navigation = () => {
     setIsMenuOpen(false);
   }, [location]);
 
-  const navLinks = [
-    { href: "/", label: "Home" },
-    { href: "/geschichte", label: "Geschichte" },
-    { href: "/projekte", label: "Aktuelle Projekte" },
-    { href: "/vergangene-projekte", label: "Alte Projekte" },
-    { href: "/mitmachen", label: "Mitmachen" },
-  ];
+  const getCurrentLanguage = () => {
+    const path = location.pathname;
+    if (path.startsWith('/en')) return 'en';
+    if (path.startsWith('/ar')) return 'ar';
+    return 'de';
+  };
+
+  const getLocalizedNavItems = () => {
+    const currentLang = getCurrentLanguage();
+    const basePath = currentLang === 'de' ? '' : `/${currentLang}`;
+
+    switch (currentLang) {
+      case 'en':
+        return [
+          { href: `${basePath}` || '/', label: "Home" },
+          { href: `${basePath}/geschichte`, label: "History" },
+          { href: `${basePath}/projects`, label: "Projects" },
+          { href: `${basePath}/past-projects`, label: "Past Projects" },
+          { href: `${basePath}/get-involved`, label: "Get Involved" }
+        ];
+      case 'ar':
+        return [
+          { href: `${basePath}` || '/', label: "الرئيسية" },
+          { href: `${basePath}/geschichte`, label: "التاريخ" },
+          { href: `${basePath}/projects`, label: "المشاريع" },
+          { href: `${basePath}/past-projects`, label: "المشاريع السابقة" },
+          { href: `${basePath}/get-involved`, label: "شارك معنا" }
+        ];
+      default:
+        return [
+          { href: "/", label: "Home" },
+          { href: "/geschichte", label: "Geschichte" },
+          { href: "/projekte", label: "Aktuelle Projekte" },
+          { href: "/vergangene-projekte", label: "Alte Projekte" },
+          { href: "/mitmachen", label: "Mitmachen" }
+        ];
+    }
+  };
+
+  const getDonateLink = () => {
+    const currentLang = getCurrentLanguage();
+    return currentLang === 'de' ? '/spenden' : `/${currentLang}/donate`;
+  };
+
+  const getDonateLabel = () => {
+    const currentLang = getCurrentLanguage();
+    switch (currentLang) {
+      case 'en': return 'Donate Now';
+      case 'ar': return 'تبرع الآن';
+      default: return 'Jetzt Spenden';
+    }
+  };
+
+  const navLinks = getLocalizedNavItems();
+  const isRTL = getCurrentLanguage() === 'ar';
 
   return (
     <>
@@ -35,18 +86,22 @@ const Navigation = () => {
         isScrolled 
           ? 'bg-white/98 backdrop-blur-md shadow-lg' 
           : 'bg-white/95 backdrop-blur-md'
-      } border-b border-shamsy-primary/10`}>
+      } border-b border-shamsy-primary/10`} dir={isRTL ? 'rtl' : 'ltr'}>
         <div className="container mx-auto px-4 py-4">
           <div className="flex justify-between items-center">
-            {/* Logo */}
+            {/* Logo with Flags */}
             <Link 
-              to="/" 
-              className="text-2xl font-bold text-shamsy-primary hover:text-shamsy-light shamsy-transition tracking-tight"
+              to={getCurrentLanguage() === 'de' ? '/' : `/${getCurrentLanguage()}`}
+              className="flex items-center gap-3 text-2xl font-bold text-shamsy-primary hover:text-shamsy-light shamsy-transition tracking-tight"
             >
               ShamSy
+              <div className="flex items-center gap-2">
+                <img src={flagSyria} alt="Syrian Flag" className="w-8 h-6 object-cover rounded-sm shadow-sm" />
+                <img src={flagGermany} alt="German Flag" className="w-8 h-6 object-cover rounded-sm shadow-sm" />
+              </div>
             </Link>
 
-            {/* Desktop Navigation with Donate Button */}
+            {/* Desktop Navigation with Language Switcher and Donate Button */}
             <div className="hidden md:flex items-center space-x-6">
               {navLinks.map((link) => (
                 <Link
@@ -61,13 +116,14 @@ const Navigation = () => {
                   {link.label}
                 </Link>
               ))}
+              <LanguageSwitcher />
               <Button 
                 asChild 
                 className="bg-shamsy-primary hover:bg-shamsy-dark shamsy-transition shamsy-shadow-green"
               >
-                <Link to="/spenden" className="flex items-center gap-2">
+                <Link to={getDonateLink()} className="flex items-center gap-2">
                   <Heart className="w-4 h-4" />
-                  Jetzt Spenden
+                  {getDonateLabel()}
                 </Link>
               </Button>
             </div>
@@ -112,27 +168,23 @@ const Navigation = () => {
                   {link.label}
                 </Link>
               ))}
+              
+              {/* Language Switcher for mobile */}
+              <div className="pt-4 border-t border-shamsy-primary/10">
+                <LanguageSwitcher />
+              </div>
+              
               <div className="pt-4 border-t border-shamsy-primary/10">
                 <Button 
                   asChild 
                   className="w-full bg-shamsy-primary hover:bg-shamsy-dark shamsy-transition"
                   size="lg"
                 >
-                  <Link to="/spenden" className="flex items-center justify-center gap-2">
+                  <Link to={getDonateLink()} className="flex items-center justify-center gap-2">
                     <Heart className="w-4 h-4" />
-                    Jetzt Spenden
+                    {getDonateLabel()}
                   </Link>
                 </Button>
-              </div>
-               
-              {/* Language Options */}
-              <div className="pt-4 border-t border-shamsy-primary/10">
-                <p className="text-shamsy-primary font-semibold text-sm mb-2">Sprache:</p>
-                <div className="flex space-x-4">
-                  <span className="text-sm font-medium text-shamsy-primary">Deutsch</span>
-                  <span className="text-sm text-muted-foreground">English</span>
-                  <span className="text-sm text-muted-foreground">العربية</span>
-                </div>
               </div>
             </div>
           </div>
