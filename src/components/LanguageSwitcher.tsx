@@ -19,21 +19,52 @@ const LanguageSwitcher = () => {
     return 'de';
   };
 
-  const getBasePath = () => {
+  const getEquivalentPath = (targetLanguage: string) => {
     const path = location.pathname;
-    if (path.startsWith('/en/')) return path.substring(3);
-    if (path.startsWith('/ar/')) return path.substring(3);
-    return path;
+    
+    // Handle home pages
+    if (path === '/' || path === '/en' || path === '/en/' || path === '/ar' || path === '/ar/') {
+      return targetLanguage === 'de' ? '/' : `/${targetLanguage}`;
+    }
+    
+    // Page mapping between languages
+    const pageMap: Record<string, Record<string, string>> = {
+      'geschichte': { en: 'history', ar: 'history' },
+      'history': { de: 'geschichte', ar: 'history' },
+      'projekte': { en: 'projects', ar: 'projects' },
+      'projects': { de: 'projekte', ar: 'projects' },
+      'vergangene-projekte': { en: 'past-projects', ar: 'past-projects' },
+      'past-projects': { de: 'vergangene-projekte', ar: 'past-projects' },
+      'mitmachen': { en: 'get-involved', ar: 'get-involved' },
+      'get-involved': { de: 'mitmachen', ar: 'get-involved' },
+      'spenden': { en: 'donate', ar: 'donate' },
+      'donate': { de: 'spenden', ar: 'donate' }
+    };
+    
+    // Extract current page name
+    let currentPage = '';
+    if (path.startsWith('/en/')) {
+      currentPage = path.substring(4);
+    } else if (path.startsWith('/ar/')) {
+      currentPage = path.substring(4);
+    } else if (path.startsWith('/')) {
+      currentPage = path.substring(1);
+    }
+    
+    // Get target page name
+    const targetPage = pageMap[currentPage]?.[targetLanguage] || currentPage;
+    
+    // Construct target path
+    if (targetLanguage === 'de') {
+      return `/${targetPage}`;
+    } else {
+      return `/${targetLanguage}/${targetPage}`;
+    }
   };
 
   const switchLanguage = (language: string) => {
-    const basePath = getBasePath();
-    
-    if (language === 'de') {
-      navigate(basePath || '/');
-    } else {
-      navigate(`/${language}${basePath || ''}`);
-    }
+    const targetPath = getEquivalentPath(language);
+    navigate(targetPath);
   };
 
   const currentLang = getCurrentLanguage();
