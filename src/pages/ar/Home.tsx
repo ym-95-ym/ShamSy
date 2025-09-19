@@ -19,7 +19,7 @@ const Home = () => {
             المصدر: أرشيف شمس سوريا
           </div>
         </div>
-        
+         
         {/* Green Overlay */}
         <div className="absolute inset-0 shamsy-hero-gradient" />
         
