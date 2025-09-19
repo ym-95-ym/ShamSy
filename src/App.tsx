@@ -17,10 +17,18 @@ import NotFound from "@/pages/NotFound";
 // English pages
 import HomeEn from "@/pages/en/Home";
 import ProjectsEn from "@/pages/en/Projects";
+import HistoryEn from "@/pages/en/History";
+import PastProjectsEn from "@/pages/en/PastProjects";
+import GetInvolvedEn from "@/pages/en/GetInvolved";
+import DonateEn from "@/pages/en/Donate";
 
 // Arabic pages  
 import HomeAr from "@/pages/ar/Home";
 import ProjectsAr from "@/pages/ar/Projects";
+import HistoryAr from "@/pages/ar/History";
+import PastProjectsAr from "@/pages/ar/PastProjects";
+import GetInvolvedAr from "@/pages/ar/GetInvolved";
+import DonateAr from "@/pages/ar/Donate";
 
 const queryClient = new QueryClient();
 
@@ -29,7 +37,7 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <BrowserRouter basename="/shamsy">  {/* ← DIESE ZEILE HINZUGEFÜGT */}
+      <BrowserRouter>
         <ScrollToTop />
         <div className="min-h-screen flex flex-col">
           <Navigation />
@@ -46,20 +54,20 @@ const App = () => (
               {/* English routes */}
               <Route path="/en" element={<HomeEn />} />
               <Route path="/en/" element={<HomeEn />} />
-              <Route path="/en/geschichte" element={<Geschichte />} />
+              <Route path="/en/history" element={<HistoryEn />} />
               <Route path="/en/projects" element={<ProjectsEn />} />
-              <Route path="/en/past-projects" element={<VergangeneProj />} />
-              <Route path="/en/get-involved" element={<Mitmachen />} />
-              <Route path="/en/donate" element={<Spenden />} />
+              <Route path="/en/past-projects" element={<PastProjectsEn />} />
+              <Route path="/en/get-involved" element={<GetInvolvedEn />} />
+              <Route path="/en/donate" element={<DonateEn />} />
 
               {/* Arabic routes */}
               <Route path="/ar" element={<HomeAr />} />
               <Route path="/ar/" element={<HomeAr />} />
-              <Route path="/ar/geschichte" element={<Geschichte />} />
+              <Route path="/ar/history" element={<HistoryAr />} />
               <Route path="/ar/projects" element={<ProjectsAr />} />
-              <Route path="/ar/past-projects" element={<VergangeneProj />} />
-              <Route path="/ar/get-involved" element={<Mitmachen />} />
-              <Route path="/ar/donate" element={<Spenden />} />
+              <Route path="/ar/past-projects" element={<PastProjectsAr />} />
+              <Route path="/ar/get-involved" element={<GetInvolvedAr />} />
+              <Route path="/ar/donate" element={<DonateAr />} />
 
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />
