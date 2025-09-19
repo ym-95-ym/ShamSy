@@ -3,8 +3,8 @@ import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Menu, X, Heart } from "lucide-react";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
-import flagSyria from "@/assets/flag-syria-clean.jpeg";
-import flagGermany from "@/assets/flag-germany.jpeg";
+import flagSyria from "@/assets/flag-syria-clean.jpg";
+import flagGermany from "@/assets/flag-germany.jpg";
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -39,7 +39,7 @@ const Navigation = () => {
       case 'en':
         return [
           { href: `${basePath}` || '/', label: "Home" },
-          { href: `${basePath}/geschichte`, label: "History" },
+          { href: `${basePath}/history`, label: "History" },
           { href: `${basePath}/projects`, label: "Projects" },
           { href: `${basePath}/past-projects`, label: "Past Projects" },
           { href: `${basePath}/get-involved`, label: "Get Involved" }
@@ -47,7 +47,7 @@ const Navigation = () => {
       case 'ar':
         return [
           { href: `${basePath}` || '/', label: "الرئيسية" },
-          { href: `${basePath}/geschichte`, label: "التاريخ" },
+          { href: `${basePath}/history`, label: "قصتنا" },
           { href: `${basePath}/projects`, label: "المشاريع" },
           { href: `${basePath}/past-projects`, label: "المشاريع السابقة" },
           { href: `${basePath}/get-involved`, label: "شارك معنا" }
