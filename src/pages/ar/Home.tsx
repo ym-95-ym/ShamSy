@@ -32,7 +32,7 @@ const Home = () => {
             
             <div className="space-y-6 mb-12 text-lg md:text-xl leading-relaxed drop-shadow-md">
               <p>
-                سوريا بلد مليء بالجراح من <strong>١٤ عاماً من الحرب، ٥٥ عاماً من الديكتاتورية،</strong> ونقص في أهم ضروريات الحياة.
+                سوريا بلد مليء بالجراح… <strong>١٤ عاماً من الحرب، ٥٥ عاماً من الديكتاتورية،</strong> ونقص في أهم ضروريات الحياة.
               </p>
               
               <p>
